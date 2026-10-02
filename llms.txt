@@ -20,6 +20,10 @@
 - [UK Companies House leads with directors and filing signals](https://retracn.github.io/automationnation-actors/companies-house-leads/): quick facts, code examples, MCP setup and FAQ.
 - [Find contact emails for a list of company websites](https://retracn.github.io/automationnation-actors/contact-waterfall-enrichment/): quick facts, code examples, MCP setup and FAQ.
 - [Google Jobs scrapers on Apify compared (2026): price, run success and features](https://retracn.github.io/automationnation-actors/compare/google-jobs-scrapers/): price per 1,000 jobs, start fees, users, ratings and run success of the most-used Google Jobs Actors on Apify.
+- [How to scrape Google Jobs in 2026 (no code, API or AI agent)](https://retracn.github.io/automationnation-actors/guides/how-to-scrape-google-jobs/): Step-by-step guide to scraping Google Jobs listings with full descriptions, salaries and apply links — no code, via API or from an AI assistant.
+- [How to check if your website is cited in Google AI Overviews](https://retracn.github.io/automationnation-actors/guides/check-google-ai-overview-citations/): Find out whether Google's AI Overviews cite your website for your keywords, at what position, who's cited instead — and track it over time.
+- [How to find UK business leads with emails and company directors](https://retracn.github.io/automationnation-actors/guides/uk-business-leads-emails-directors/): Build a UK B2B lead list from Google Maps with emails, phone numbers and Companies House directors, plus lead scores and AI outreach copy.
+- [How to analyse App Store and Google Play reviews with AI](https://retracn.github.io/automationnation-actors/guides/analyse-app-reviews-with-ai/): Scrape your app's (or a competitor's) App Store and Google Play reviews and get an AI summary of bugs, feature requests and critical issues.
 
 ## For AI agents
 

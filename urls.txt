@@ -6,4 +6,8 @@ https://retracn.github.io/automationnation-actors/app-store-review-miner/
 https://retracn.github.io/automationnation-actors/companies-house-leads/
 https://retracn.github.io/automationnation-actors/contact-waterfall-enrichment/
 https://retracn.github.io/automationnation-actors/compare/google-jobs-scrapers/
+https://retracn.github.io/automationnation-actors/guides/how-to-scrape-google-jobs/
+https://retracn.github.io/automationnation-actors/guides/check-google-ai-overview-citations/
+https://retracn.github.io/automationnation-actors/guides/uk-business-leads-emails-directors/
+https://retracn.github.io/automationnation-actors/guides/analyse-app-reviews-with-ai/
 https://retracn.github.io/automationnation-actors/llms.txt
