@@ -19,6 +19,7 @@
 - [App Store and Google Play reviews with an AI report of bugs and feature requests](https://retracn.github.io/automationnation-actors/app-store-review-miner/): quick facts, code examples, MCP setup and FAQ.
 - [UK Companies House leads with directors and filing signals](https://retracn.github.io/automationnation-actors/companies-house-leads/): quick facts, code examples, MCP setup and FAQ.
 - [Find contact emails for a list of company websites](https://retracn.github.io/automationnation-actors/contact-waterfall-enrichment/): quick facts, code examples, MCP setup and FAQ.
+- [Google Jobs scrapers on Apify compared (2026): price, run success and features](https://retracn.github.io/automationnation-actors/compare/google-jobs-scrapers/): price per 1,000 jobs, start fees, users, ratings and run success of the most-used Google Jobs Actors on Apify.
 
 ## For AI agents
 
