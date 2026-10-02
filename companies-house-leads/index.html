@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UK Companies House leads with directors and filing signals | AutomationNation</title><meta name="description" content="UK Companies House Leads is an Apify Actor that turns the official UK Companies House register into scored B2B leads: company profiles, directors, persons…"><link rel="canonical" href="https://retracn.github.io/automationnation-actors/companies-house-leads/">
+<meta property="og:title" content="UK Companies House leads with directors and filing signals | AutomationNation"><meta property="og:description" content="UK Companies House Leads is an Apify Actor that turns the official UK Companies House register into scored B2B leads: company profiles, directors, persons…"><meta property="og:type" content="website"><meta property="og:url" content="https://retracn.github.io/automationnation-actors/companies-house-leads/">
+<style>
+:root{--bg:#fff;--fg:#1f2328;--muted:#59636e;--card:#f6f8fa;--border:#d1d9e0;--accent:#0b57d0;--accent-fg:#fff}
+@media (prefers-color-scheme: dark){:root{--bg:#0d1117;--fg:#e6edf3;--muted:#9198a1;--card:#161b22;--border:#30363d;--accent:#4493f8;--accent-fg:#0d1117}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:860px;margin:0 auto;padding:32px 16px 64px}a{color:var(--accent)}h1{font-size:2rem;line-height:1.25;margin:.2em 0 .4em}h2{margin-top:2em;border-bottom:1px solid var(--border);padding-bottom:.3em}
+.lead{font-size:1.1rem}.btn{display:inline-block;background:var(--accent);color:var(--accent-fg);padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600;margin:8px 8px 8px 0}
+.muted{color:var(--muted)}pre{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px;overflow-x:auto;font-size:.88rem}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px}.card h3{margin:.1em 0 .4em;font-size:1.05rem}
+details{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin:8px 0}summary{font-weight:600;cursor:pointer}nav{font-size:.9rem;margin-bottom:12px}footer{margin-top:48px;font-size:.85rem;color:var(--muted)}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "UK Companies House Leads — Filing Signals & AI Outreach", "description": "UK Companies House Leads is an Apify Actor that turns the official UK Companies House register into scored B2B leads: company profiles, directors, persons with significant control and buying signals from recent filings such as new funding, director changes and new incorporations.", "applicationCategory": "BusinessApplication", "operatingSystem": "Web (Apify platform)", "url": "https://apify.com/automationnation/companies-house-leads", "offers": {"@type": "Offer", "price": "0.008", "priceCurrency": "USD", "description": "$0.008 per lead"}, "publisher": {"@type": "Organization", "name": "AutomationNation", "url": "https://apify.com/automationnation"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I get leads from Companies House?", "acceptedAnswer": {"@type": "Answer", "text": "UK Companies House Leads on Apify queries the official Companies House register by industry (SIC code), location, status and incorporation date, and returns each company with its directors, filing signals and a lead score."}}]}</script></head>
+<body><main><nav><a href="https://retracn.github.io/automationnation-actors/">AutomationNation Actors</a> › UK Companies House Leads — Filing Signals &amp; AI Outreach</nav>
+<h1>UK Companies House leads with directors and filing signals</h1>
+<p class="lead">UK Companies House Leads is an Apify Actor that turns the official UK Companies House register into scored B2B leads: company profiles, directors, persons with significant control and buying signals from recent filings such as new funding, director changes and new incorporations.</p>
+<p><a class="btn" href="https://apify.com/automationnation/companies-house-leads">Run it on Apify</a> <span class="muted">$0.008 per lead</span></p>
+<h2>Quick facts</h2><ul><li>Filter by SIC code, location, company status and incorporation date.</li><li>Signals: share allotments (fresh funding), director appointments and resignations, recent incorporations — scored HOT / WARM / COLD.</li><li>Optional AI intent summary and outreach copy (email, LinkedIn, SMS).</li><li>Price: $0.008 per lead.</li></ul>
+
+<h2>Use it with AI agents (MCP)</h2>
+<p>Connect AI assistants such as Claude, ChatGPT or Cursor through Apify's MCP server. Hosted URL:</p><pre><code>https://mcp.apify.com?tools=automationnation/companies-house-leads</code></pre>
+<p>Or run it locally in Claude Desktop / Cursor:</p><pre><code>{
+  &quot;mcpServers&quot;: {
+    &quot;companies-house-leads&quot;: {
+      &quot;command&quot;: &quot;npx&quot;,
+      &quot;args&quot;: [
+        &quot;-y&quot;,
+        &quot;@apify/actors-mcp-server&quot;,
+        &quot;--tools&quot;,
+        &quot;automationnation/companies-house-leads&quot;
+      ],
+      &quot;env&quot;: {
+        &quot;APIFY_TOKEN&quot;: &quot;YOUR_APIFY_TOKEN&quot;
+      }
+    }
+  }
+}</code></pre>
+<h2>FAQ</h2><details open><summary>How do I get leads from Companies House?</summary><p>UK Companies House Leads on Apify queries the official Companies House register by industry (SIC code), location, status and incorporation date, and returns each company with its directors, filing signals and a lead score.</p></details>
+<p><a class="btn" href="https://apify.com/automationnation/companies-house-leads">Open UK Companies House Leads — Filing Signals &amp; AI Outreach on Apify Store</a></p><footer>Built by AutomationNation · Actors run on the <a href="https://apify.com">Apify</a> platform · <a href="https://retracn.github.io/automationnation-actors/">All Actors</a> · <a href="https://retracn.github.io/automationnation-actors/llms.txt">llms.txt</a></footer></main></body></html>

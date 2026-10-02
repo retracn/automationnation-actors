@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Find contact emails for a list of company websites | AutomationNation</title><meta name="description" content="Contact Waterfall Enrichment is an Apify Actor that finds the best contact email for each company in a list: published emails from the website first, then…"><link rel="canonical" href="https://retracn.github.io/automationnation-actors/contact-waterfall-enrichment/">
+<meta property="og:title" content="Find contact emails for a list of company websites | AutomationNation"><meta property="og:description" content="Contact Waterfall Enrichment is an Apify Actor that finds the best contact email for each company in a list: published emails from the website first, then…"><meta property="og:type" content="website"><meta property="og:url" content="https://retracn.github.io/automationnation-actors/contact-waterfall-enrichment/">
+<style>
+:root{--bg:#fff;--fg:#1f2328;--muted:#59636e;--card:#f6f8fa;--border:#d1d9e0;--accent:#0b57d0;--accent-fg:#fff}
+@media (prefers-color-scheme: dark){:root{--bg:#0d1117;--fg:#e6edf3;--muted:#9198a1;--card:#161b22;--border:#30363d;--accent:#4493f8;--accent-fg:#0d1117}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:860px;margin:0 auto;padding:32px 16px 64px}a{color:var(--accent)}h1{font-size:2rem;line-height:1.25;margin:.2em 0 .4em}h2{margin-top:2em;border-bottom:1px solid var(--border);padding-bottom:.3em}
+.lead{font-size:1.1rem}.btn{display:inline-block;background:var(--accent);color:var(--accent-fg);padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600;margin:8px 8px 8px 0}
+.muted{color:var(--muted)}pre{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px;overflow-x:auto;font-size:.88rem}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px}.card h3{margin:.1em 0 .4em;font-size:1.05rem}
+details{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin:8px 0}summary{font-weight:600;cursor:pointer}nav{font-size:.9rem;margin-bottom:12px}footer{margin-top:48px;font-size:.85rem;color:var(--muted)}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Contact Waterfall Enrichment — Emails & Directors", "description": "Contact Waterfall Enrichment is an Apify Actor that finds the best contact email for each company in a list: published emails from the website first, then UK Companies House director names with common email patterns verified against the domain's mail servers.", "applicationCategory": "BusinessApplication", "operatingSystem": "Web (Apify platform)", "url": "https://apify.com/automationnation/contact-waterfall-enrichment", "offers": {"@type": "Offer", "price": "0.015", "priceCurrency": "USD", "description": "$0.015 per company"}, "publisher": {"@type": "Organization", "name": "AutomationNation", "url": "https://apify.com/automationnation"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I find emails for a list of company websites?", "acceptedAnswer": {"@type": "Answer", "text": "Contact Waterfall Enrichment on Apify scrapes each website for published emails, then falls back to Companies House director names and common email patterns verified against the domain's mail servers, returning the best email with a confidence level."}}]}</script></head>
+<body><main><nav><a href="https://retracn.github.io/automationnation-actors/">AutomationNation Actors</a> › Contact Waterfall Enrichment — Emails &amp; Directors</nav>
+<h1>Find contact emails for a list of company websites</h1>
+<p class="lead">Contact Waterfall Enrichment is an Apify Actor that finds the best contact email for each company in a list: published emails from the website first, then UK Companies House director names with common email patterns verified against the domain&#x27;s mail servers.</p>
+<p><a class="btn" href="https://apify.com/automationnation/contact-waterfall-enrichment">Run it on Apify</a> <span class="muted">$0.015 per company</span></p>
+<h2>Quick facts</h2><ul><li>Scrapes homepages and contact / about / team pages, JSON-LD and obfuscated emails.</li><li>Falls back to Companies House director names for UK companies and MX-verified email patterns.</li><li>Every result carries a confidence level (named contact, generic contact, verified pattern, none).</li><li>Price: $0.015 per company.</li></ul>
+
+<h2>Use it with AI agents (MCP)</h2>
+<p>Connect AI assistants such as Claude, ChatGPT or Cursor through Apify's MCP server. Hosted URL:</p><pre><code>https://mcp.apify.com?tools=automationnation/contact-waterfall-enrichment</code></pre>
+<p>Or run it locally in Claude Desktop / Cursor:</p><pre><code>{
+  &quot;mcpServers&quot;: {
+    &quot;contact-waterfall-enrichment&quot;: {
+      &quot;command&quot;: &quot;npx&quot;,
+      &quot;args&quot;: [
+        &quot;-y&quot;,
+        &quot;@apify/actors-mcp-server&quot;,
+        &quot;--tools&quot;,
+        &quot;automationnation/contact-waterfall-enrichment&quot;
+      ],
+      &quot;env&quot;: {
+        &quot;APIFY_TOKEN&quot;: &quot;YOUR_APIFY_TOKEN&quot;
+      }
+    }
+  }
+}</code></pre>
+<h2>FAQ</h2><details open><summary>How do I find emails for a list of company websites?</summary><p>Contact Waterfall Enrichment on Apify scrapes each website for published emails, then falls back to Companies House director names and common email patterns verified against the domain&#x27;s mail servers, returning the best email with a confidence level.</p></details>
+<p><a class="btn" href="https://apify.com/automationnation/contact-waterfall-enrichment">Open Contact Waterfall Enrichment — Emails &amp; Directors on Apify Store</a></p><footer>Built by AutomationNation · Actors run on the <a href="https://apify.com">Apify</a> platform · <a href="https://retracn.github.io/automationnation-actors/">All Actors</a> · <a href="https://retracn.github.io/automationnation-actors/llms.txt">llms.txt</a></footer></main></body></html>
