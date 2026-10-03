@@ -5,6 +5,7 @@ https://retracn.github.io/automationnation-actors/google-trends-scraper/
 https://retracn.github.io/automationnation-actors/app-store-reviews-scraper/
 https://retracn.github.io/automationnation-actors/google-play-reviews-scraper/
 https://retracn.github.io/automationnation-actors/aeo-auditor/
+https://retracn.github.io/automationnation-actors/google-maps-leads/
 https://retracn.github.io/automationnation-actors/uk-business-leads/
 https://retracn.github.io/automationnation-actors/app-store-review-miner/
 https://retracn.github.io/automationnation-actors/companies-house-leads/
