@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>App Store Reviews Scraper &amp; API: past the 500-review limit, with developer replies | AutomationNation</title><meta name="description" content="App Store Reviews Scraper is an Apify Actor that extracts Apple App Store reviews for any app and country — star rating, title, text, date, author and the…"><link rel="canonical" href="https://retracn.github.io/automationnation-actors/app-store-reviews-scraper/">
+<meta property="og:title" content="App Store Reviews Scraper &amp; API: past the 500-review limit, with developer replies | AutomationNation"><meta property="og:description" content="App Store Reviews Scraper is an Apify Actor that extracts Apple App Store reviews for any app and country — star rating, title, text, date, author and the…"><meta property="og:type" content="website"><meta property="og:url" content="https://retracn.github.io/automationnation-actors/app-store-reviews-scraper/">
+<style>
+:root{--bg:#fff;--fg:#1f2328;--muted:#59636e;--card:#f6f8fa;--border:#d1d9e0;--accent:#0b57d0;--accent-fg:#fff}
+@media (prefers-color-scheme: dark){:root{--bg:#0d1117;--fg:#e6edf3;--muted:#9198a1;--card:#161b22;--border:#30363d;--accent:#4493f8;--accent-fg:#0d1117}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:860px;margin:0 auto;padding:32px 16px 64px}a{color:var(--accent)}h1{font-size:2rem;line-height:1.25;margin:.2em 0 .4em}h2{margin-top:2em;border-bottom:1px solid var(--border);padding-bottom:.3em}
+.lead{font-size:1.1rem}.btn{display:inline-block;background:var(--accent);color:var(--accent-fg);padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600;margin:8px 8px 8px 0}
+.muted{color:var(--muted)}pre{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px;overflow-x:auto;font-size:.88rem}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px}.card h3{margin:.1em 0 .4em;font-size:1.05rem}
+details{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin:8px 0}summary{font-weight:600;cursor:pointer}nav{font-size:.9rem;margin-bottom:12px}footer{margin-top:48px;font-size:.85rem;color:var(--muted)}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "App Store Reviews Scraper", "description": "App Store Reviews Scraper is an Apify Actor that extracts Apple App Store reviews for any app and country — star rating, title, text, date, author and the developer's reply — and goes past the 500-review limit of Apple's public review feed, at $0.08 per 1,000 reviews. It works as an App Store reviews API: call it from code, schedule it to monitor new reviews, or let AI agents use it through Apify's MCP server.", "applicationCategory": "BusinessApplication", "operatingSystem": "Web (Apify platform)", "url": "https://apify.com/automationnation/app-store-reviews-scraper", "offers": {"@type": "Offer", "price": "0.00008", "priceCurrency": "USD", "description": "$0.08 per 1,000 reviews ($0.05–$0.07 on paid plans)"}, "publisher": {"@type": "Organization", "name": "AutomationNation", "url": "https://apify.com/automationnation"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why do most App Store scrapers stop at 500 reviews?", "acceptedAnswer": {"@type": "Answer", "text": "Apple's public RSS review feed only returns the newest 500 reviews per country (10 pages of 50). App Store Reviews Scraper reads the review API that apps.apple.com itself uses, which pages much further back, and keeps the feed as a fallback."}}, {"@type": "Question", "name": "Does it include developer responses?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every review the developer answered has replyText and replyDate."}}, {"@type": "Question", "name": "Is there an official App Store reviews API?", "acceptedAnswer": {"@type": "Answer", "text": "Apple's App Store Connect API returns reviews only for apps in your own developer account. To read reviews of any app, including competitors', App Store Reviews Scraper returns the public reviews shown on the App Store through Apify's REST API, clients, integrations and MCP."}}, {"@type": "Question", "name": "How much does it cost?", "acceptedAnswer": {"@type": "Answer", "text": "$0.08 per 1,000 reviews on Apify's Free plan and $0.05–$0.07 on paid plans. Apps that can't be found and repeats in Only new reviews mode are free."}}, {"@type": "Question", "name": "Can I get reviews from several countries?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. List the storefronts in countries; each app is read once per country and every row has its country."}}]}</script></head>
+<body><main><nav><a href="https://retracn.github.io/automationnation-actors/">AutomationNation Actors</a> › App Store Reviews Scraper</nav>
+<h1>App Store Reviews Scraper &amp; API: past the 500-review limit, with developer replies</h1>
+<p class="lead">App Store Reviews Scraper is an Apify Actor that extracts Apple App Store reviews for any app and country — star rating, title, text, date, author and the developer&#x27;s reply — and goes past the 500-review limit of Apple&#x27;s public review feed, at $0.08 per 1,000 reviews. It works as an App Store reviews API: call it from code, schedule it to monitor new reviews, or let AI agents use it through Apify&#x27;s MCP server.</p>
+<p><a class="btn" href="https://apify.com/automationnation/app-store-reviews-scraper">Run it on Apify</a> <span class="muted">$0.08 per 1,000 reviews ($0.05–$0.07 on paid plans)</span></p>
+<h2>Quick facts</h2><ul><li>One row per review: stars, title, text, date, the reviewer&#x27;s public name, whether the review was edited, and the developer&#x27;s reply with its date, plus app name, developer, overall rating and App Store URL.</li><li>Past 500 reviews: most App Store scrapers read Apple&#x27;s public RSS feed, which stops at the newest 500 reviews per country. This Actor reads the review API behind apps.apple.com and pages back tens of thousands of reviews for popular apps.</li><li>Any app and storefront: App Store URLs, numeric App IDs or app names, several countries per run; newest or most helpful first; star filters.</li><li>Only new reviews mode for scheduled monitoring; repeats aren&#x27;t charged. In a test run, 5,000 reviews from 3 apps in 2 countries took under 2 minutes.</li><li>Price: $0.08 per 1,000 reviews on the Free plan ($0.05–$0.07 on paid plans), with no caps on free-plan runs or reviews. Apify&#x27;s free $5 monthly credit covers over 60,000 reviews.</li></ul>
+<h2>Example input</h2><pre><code>{
+  &quot;apps&quot;: [
+    &quot;https://apps.apple.com/us/app/spotify-music-and-podcasts/id324684580&quot;,
+    &quot;570060128&quot;
+  ],
+  &quot;countries&quot;: [
+    &quot;us&quot;,
+    &quot;gb&quot;
+  ],
+  &quot;maxReviewsPerApp&quot;: 1000,
+  &quot;sort&quot;: &quot;newest&quot;
+}</code></pre>
+<h2>Run it from code</h2><h3>REST API (cURL)</h3><pre><code>curl -X POST &quot;https://api.apify.com/v2/acts/automationnation~app-store-reviews-scraper/run-sync-get-dataset-items?token=$APIFY_TOKEN&quot; \
+  -H &quot;Content-Type: application/json&quot; \
+  -d &#x27;{&quot;apps&quot;: [&quot;https://apps.apple.com/us/app/spotify-music-and-podcasts/id324684580&quot;, &quot;570060128&quot;], &quot;countries&quot;: [&quot;us&quot;, &quot;gb&quot;], &quot;maxReviewsPerApp&quot;: 1000, &quot;sort&quot;: &quot;newest&quot;}&#x27;</code></pre>
+<h3>Python</h3><pre><code># pip install apify-client
+from apify_client import ApifyClient
+
+client = ApifyClient(&quot;YOUR_APIFY_TOKEN&quot;)
+run = client.actor(&quot;automationnation/app-store-reviews-scraper&quot;).call(run_input={
+  &quot;apps&quot;: [
+    &quot;https://apps.apple.com/us/app/spotify-music-and-podcasts/id324684580&quot;,
+    &quot;570060128&quot;
+  ],
+  &quot;countries&quot;: [
+    &quot;us&quot;,
+    &quot;gb&quot;
+  ],
+  &quot;maxReviewsPerApp&quot;: 1000,
+  &quot;sort&quot;: &quot;newest&quot;
+})
+for item in client.dataset(run[&quot;defaultDatasetId&quot;]).iterate_items():
+    print(item.get(&quot;appName&quot;), item.get(&quot;rating&quot;), item.get(&quot;date&quot;), item.get(&quot;title&quot;))</code></pre><h3>JavaScript / Node.js</h3><pre><code>// npm install apify-client
+import { ApifyClient } from &#x27;apify-client&#x27;;
+
+const client = new ApifyClient({ token: &#x27;YOUR_APIFY_TOKEN&#x27; });
+const run = await client.actor(&#x27;automationnation/app-store-reviews-scraper&#x27;).call({
+  &quot;apps&quot;: [
+    &quot;https://apps.apple.com/us/app/spotify-music-and-podcasts/id324684580&quot;,
+    &quot;570060128&quot;
+  ],
+  &quot;countries&quot;: [
+    &quot;us&quot;,
+    &quot;gb&quot;
+  ],
+  &quot;maxReviewsPerApp&quot;: 1000,
+  &quot;sort&quot;: &quot;newest&quot;
+});
+const { items } = await client.dataset(run.defaultDatasetId).listItems();
+for (const item of items) console.log(item.appName, item.rating, item.date, item.title);</code></pre>
+<h2>Use it with AI agents (MCP)</h2>
+<p>Connect AI assistants such as Claude, ChatGPT or Cursor through Apify's MCP server. Hosted URL:</p><pre><code>https://mcp.apify.com?tools=automationnation/app-store-reviews-scraper</code></pre>
+<p>Or run it locally in Claude Desktop / Cursor:</p><pre><code>{
+  &quot;mcpServers&quot;: {
+    &quot;app-store-reviews-scraper&quot;: {
+      &quot;command&quot;: &quot;npx&quot;,
+      &quot;args&quot;: [
+        &quot;-y&quot;,
+        &quot;@apify/actors-mcp-server&quot;,
+        &quot;--tools&quot;,
+        &quot;automationnation/app-store-reviews-scraper&quot;
+      ],
+      &quot;env&quot;: {
+        &quot;APIFY_TOKEN&quot;: &quot;YOUR_APIFY_TOKEN&quot;
+      }
+    }
+  }
+}</code></pre>
+<h2>FAQ</h2><details open><summary>Why do most App Store scrapers stop at 500 reviews?</summary><p>Apple&#x27;s public RSS review feed only returns the newest 500 reviews per country (10 pages of 50). App Store Reviews Scraper reads the review API that apps.apple.com itself uses, which pages much further back, and keeps the feed as a fallback.</p></details><details open><summary>Does it include developer responses?</summary><p>Yes. Every review the developer answered has replyText and replyDate.</p></details><details open><summary>Is there an official App Store reviews API?</summary><p>Apple&#x27;s App Store Connect API returns reviews only for apps in your own developer account. To read reviews of any app, including competitors&#x27;, App Store Reviews Scraper returns the public reviews shown on the App Store through Apify&#x27;s REST API, clients, integrations and MCP.</p></details><details open><summary>How much does it cost?</summary><p>$0.08 per 1,000 reviews on Apify&#x27;s Free plan and $0.05–$0.07 on paid plans. Apps that can&#x27;t be found and repeats in Only new reviews mode are free.</p></details><details open><summary>Can I get reviews from several countries?</summary><p>Yes. List the storefronts in countries; each app is read once per country and every row has its country.</p></details>
+<p>Step-by-step guide: <a href="https://retracn.github.io/automationnation-actors/guides/how-to-scrape-app-store-reviews/">How to scrape App Store reviews in 2026 (past the 500-review limit)</a></p>
+<p><a class="btn" href="https://apify.com/automationnation/app-store-reviews-scraper">Open App Store Reviews Scraper on Apify Store</a></p><footer>Built by AutomationNation · Actors run on the <a href="https://apify.com">Apify</a> platform · <a href="https://retracn.github.io/automationnation-actors/">All Actors</a> · <a href="https://retracn.github.io/automationnation-actors/llms.txt">llms.txt</a></footer></main></body></html>
