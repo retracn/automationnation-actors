@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Visibility Tracker: is your brand mentioned and cited in AI search? | AutomationNation</title><meta name="description" content="AI Visibility Tracker is an Apify Actor that shows whether AI search engines mention and cite your brand. For each prompt it asks Google AI Overviews,…"><link rel="canonical" href="https://retracn.github.io/automationnation-actors/ai-visibility-tracker/">
+<meta property="og:title" content="AI Visibility Tracker: is your brand mentioned and cited in AI search? | AutomationNation"><meta property="og:description" content="AI Visibility Tracker is an Apify Actor that shows whether AI search engines mention and cite your brand. For each prompt it asks Google AI Overviews,…"><meta property="og:type" content="website"><meta property="og:url" content="https://retracn.github.io/automationnation-actors/ai-visibility-tracker/">
+<style>
+:root{--bg:#fff;--fg:#1f2328;--muted:#59636e;--card:#f6f8fa;--border:#d1d9e0;--accent:#0b57d0;--accent-fg:#fff}
+@media (prefers-color-scheme: dark){:root{--bg:#0d1117;--fg:#e6edf3;--muted:#9198a1;--card:#161b22;--border:#30363d;--accent:#4493f8;--accent-fg:#0d1117}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:860px;margin:0 auto;padding:32px 16px 64px}a{color:var(--accent)}h1{font-size:2rem;line-height:1.25;margin:.2em 0 .4em}h2{margin-top:2em;border-bottom:1px solid var(--border);padding-bottom:.3em}
+.lead{font-size:1.1rem}.btn{display:inline-block;background:var(--accent);color:var(--accent-fg);padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600;margin:8px 8px 8px 0}
+.muted{color:var(--muted)}pre{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px;overflow-x:auto;font-size:.88rem}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px}.card h3{margin:.1em 0 .4em;font-size:1.05rem}
+details{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin:8px 0}summary{font-weight:600;cursor:pointer}nav{font-size:.9rem;margin-bottom:12px}footer{margin-top:48px;font-size:.85rem;color:var(--muted)}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "AI Visibility Tracker", "description": "AI Visibility Tracker is an Apify Actor that shows whether AI search engines mention and cite your brand. For each prompt it asks Google AI Overviews, Gemini and Claude the way a customer would. It records whether your brand is named, its position against competitors, how it's described, which sites are cited, every other brand named and what changed since the last run, at $0.05 per answer plus $0.50 for an optional client-ready report.", "applicationCategory": "BusinessApplication", "operatingSystem": "Web (Apify platform)", "url": "https://apify.com/automationnation/ai-visibility-tracker", "offers": {"@type": "Offer", "price": "0.05", "priceCurrency": "USD", "description": "$0.05 per answer checked ($0.04 on Gold) + $0.50 per optional report"}, "publisher": {"@type": "Organization", "name": "AutomationNation", "url": "https://apify.com/automationnation"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is AI visibility tracking?", "acceptedAnswer": {"@type": "Answer", "text": "Checking whether AI assistants and AI search features name and cite your brand when people ask about your market, and how that changes over time. It's the measurement side of generative engine optimization (GEO)."}}, {"@type": "Question", "name": "Which AI engines does it check?", "acceptedAnswer": {"@type": "Answer", "text": "Google AI Overviews, Gemini (with Google Search grounding) and Claude (with web search). ChatGPT and Perplexity are planned."}}, {"@type": "Question", "name": "How much does it cost?", "acceptedAnswer": {"@type": "Answer", "text": "$0.05 per answer checked ($0.04 on Gold and above), plus $0.50 per run for the optional report. One answer is one prompt on one engine; answers that couldn't be checked are free."}}, {"@type": "Question", "name": "Can it find competitors I don't know about?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every company or product the answers name is listed, tracked or not, so the brands AI engines recommend instead of you show up in the report."}}]}</script></head>
+<body><main><nav><a href="https://retracn.github.io/automationnation-actors/">AutomationNation Actors</a> › AI Visibility Tracker</nav>
+<h1>AI Visibility Tracker: is your brand mentioned and cited in AI search?</h1>
+<p class="lead">AI Visibility Tracker is an Apify Actor that shows whether AI search engines mention and cite your brand. For each prompt it asks Google AI Overviews, Gemini and Claude the way a customer would. It records whether your brand is named, its position against competitors, how it&#x27;s described, which sites are cited, every other brand named and what changed since the last run, at $0.05 per answer plus $0.50 for an optional client-ready report.</p>
+<p><a class="btn" href="https://apify.com/automationnation/ai-visibility-tracker">Run it on Apify</a> <span class="muted">$0.05 per answer checked ($0.04 on Gold) + $0.50 per optional report</span></p>
+<h2>Quick facts</h2><ul><li>Engines: Google AI Overviews (late-loading overviews read in a real browser), Gemini with Google Search grounding, and Claude with web search, localised to your country.</li><li>Per answer: whether your brand is named and its position among tracked brands, whether your site is cited and at what position, competitors named or cited, sentiment with a one-line summary, every brand named, and the cited URLs.</li><li>Hidden competitors: every company or product named in the answers is counted, including ones you don&#x27;t track.</li><li>Weekly tracking: each run is compared with the last, with mentions and citations gained or lost per prompt and engine, and a client-ready HTML report.</li><li>Price: $0.05 per answer checked ($0.045 Silver, $0.04 Gold and above) plus $0.50 per optional report; answers that couldn&#x27;t be checked are free. 20 prompts on 3 engines weekly costs about $14 a month.</li></ul>
+<h2>Example input</h2><pre><code>{
+  &quot;brand&quot;: &quot;Notion&quot;,
+  &quot;domain&quot;: &quot;notion.so&quot;,
+  &quot;competitors&quot;: [
+    &quot;Obsidian (obsidian.md)&quot;,
+    &quot;Evernote (evernote.com)&quot;
+  ],
+  &quot;prompts&quot;: [
+    &quot;What is the best note-taking app for teams?&quot;
+  ],
+  &quot;engines&quot;: [
+    &quot;google-ai-overviews&quot;,
+    &quot;gemini&quot;,
+    &quot;claude&quot;
+  ]
+}</code></pre>
+<h2>Run it from code</h2><h3>REST API (cURL)</h3><pre><code>curl -X POST &quot;https://api.apify.com/v2/acts/automationnation~ai-visibility-tracker/run-sync-get-dataset-items?token=$APIFY_TOKEN&quot; \
+  -H &quot;Content-Type: application/json&quot; \
+  -d &#x27;{&quot;brand&quot;: &quot;Notion&quot;, &quot;domain&quot;: &quot;notion.so&quot;, &quot;competitors&quot;: [&quot;Obsidian (obsidian.md)&quot;, &quot;Evernote (evernote.com)&quot;], &quot;prompts&quot;: [&quot;What is the best note-taking app for teams?&quot;], &quot;engines&quot;: [&quot;google-ai-overviews&quot;, &quot;gemini&quot;, &quot;claude&quot;]}&#x27;</code></pre>
+<h3>Python</h3><pre><code># pip install apify-client
+from apify_client import ApifyClient
+
+client = ApifyClient(&quot;YOUR_APIFY_TOKEN&quot;)
+run = client.actor(&quot;automationnation/ai-visibility-tracker&quot;).call(run_input={
+  &quot;brand&quot;: &quot;Notion&quot;,
+  &quot;domain&quot;: &quot;notion.so&quot;,
+  &quot;competitors&quot;: [
+    &quot;Obsidian (obsidian.md)&quot;,
+    &quot;Evernote (evernote.com)&quot;
+  ],
+  &quot;prompts&quot;: [
+    &quot;What is the best note-taking app for teams?&quot;
+  ],
+  &quot;engines&quot;: [
+    &quot;google-ai-overviews&quot;,
+    &quot;gemini&quot;,
+    &quot;claude&quot;
+  ]
+})
+for item in client.dataset(run[&quot;defaultDatasetId&quot;]).iterate_items():
+    print(item.get(&quot;engineLabel&quot;), item.get(&quot;visibility&quot;), item.get(&quot;brandRank&quot;), item.get(&quot;prompt&quot;))</code></pre><h3>JavaScript / Node.js</h3><pre><code>// npm install apify-client
+import { ApifyClient } from &#x27;apify-client&#x27;;
+
+const client = new ApifyClient({ token: &#x27;YOUR_APIFY_TOKEN&#x27; });
+const run = await client.actor(&#x27;automationnation/ai-visibility-tracker&#x27;).call({
+  &quot;brand&quot;: &quot;Notion&quot;,
+  &quot;domain&quot;: &quot;notion.so&quot;,
+  &quot;competitors&quot;: [
+    &quot;Obsidian (obsidian.md)&quot;,
+    &quot;Evernote (evernote.com)&quot;
+  ],
+  &quot;prompts&quot;: [
+    &quot;What is the best note-taking app for teams?&quot;
+  ],
+  &quot;engines&quot;: [
+    &quot;google-ai-overviews&quot;,
+    &quot;gemini&quot;,
+    &quot;claude&quot;
+  ]
+});
+const { items } = await client.dataset(run.defaultDatasetId).listItems();
+for (const item of items) console.log(item.engineLabel, item.visibility, item.brandRank, item.prompt);</code></pre>
+<h2>Use it with AI agents (MCP)</h2>
+<p>Connect AI assistants such as Claude, ChatGPT or Cursor through Apify's MCP server. Hosted URL:</p><pre><code>https://mcp.apify.com?tools=automationnation/ai-visibility-tracker</code></pre>
+<p>Or run it locally in Claude Desktop / Cursor:</p><pre><code>{
+  &quot;mcpServers&quot;: {
+    &quot;ai-visibility-tracker&quot;: {
+      &quot;command&quot;: &quot;npx&quot;,
+      &quot;args&quot;: [
+        &quot;-y&quot;,
+        &quot;@apify/actors-mcp-server&quot;,
+        &quot;--tools&quot;,
+        &quot;automationnation/ai-visibility-tracker&quot;
+      ],
+      &quot;env&quot;: {
+        &quot;APIFY_TOKEN&quot;: &quot;YOUR_APIFY_TOKEN&quot;
+      }
+    }
+  }
+}</code></pre>
+<h2>FAQ</h2><details open><summary>What is AI visibility tracking?</summary><p>Checking whether AI assistants and AI search features name and cite your brand when people ask about your market, and how that changes over time. It&#x27;s the measurement side of generative engine optimization (GEO).</p></details><details open><summary>Which AI engines does it check?</summary><p>Google AI Overviews, Gemini (with Google Search grounding) and Claude (with web search). ChatGPT and Perplexity are planned.</p></details><details open><summary>How much does it cost?</summary><p>$0.05 per answer checked ($0.04 on Gold and above), plus $0.50 per run for the optional report. One answer is one prompt on one engine; answers that couldn&#x27;t be checked are free.</p></details><details open><summary>Can it find competitors I don&#x27;t know about?</summary><p>Yes. Every company or product the answers name is listed, tracked or not, so the brands AI engines recommend instead of you show up in the report.</p></details>
+<p>Step-by-step guide: <a href="https://retracn.github.io/automationnation-actors/guides/track-brand-in-ai-search/">How to track your brand in AI search answers (2026)</a></p>
+<p><a class="btn" href="https://apify.com/automationnation/ai-visibility-tracker">Open AI Visibility Tracker on Apify Store</a></p><footer>Built by AutomationNation · Actors run on the <a href="https://apify.com">Apify</a> platform · <a href="https://retracn.github.io/automationnation-actors/">All Actors</a> · <a href="https://retracn.github.io/automationnation-actors/llms.txt">llms.txt</a></footer></main></body></html>

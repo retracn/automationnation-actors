@@ -1,4 +1,5 @@
 https://retracn.github.io/automationnation-actors/
+https://retracn.github.io/automationnation-actors/ai-visibility-tracker/
 https://retracn.github.io/automationnation-actors/google-jobs-scraper/
 https://retracn.github.io/automationnation-actors/google-trends-scraper/
 https://retracn.github.io/automationnation-actors/app-store-reviews-scraper/
@@ -8,6 +9,7 @@ https://retracn.github.io/automationnation-actors/uk-business-leads/
 https://retracn.github.io/automationnation-actors/app-store-review-miner/
 https://retracn.github.io/automationnation-actors/companies-house-leads/
 https://retracn.github.io/automationnation-actors/contact-waterfall-enrichment/
+https://retracn.github.io/automationnation-actors/compare/ai-visibility-trackers/
 https://retracn.github.io/automationnation-actors/compare/google-jobs-scrapers/
 https://retracn.github.io/automationnation-actors/compare/google-trends-scrapers/
 https://retracn.github.io/automationnation-actors/compare/app-store-review-scrapers/
@@ -19,4 +21,5 @@ https://retracn.github.io/automationnation-actors/guides/uk-business-leads-email
 https://retracn.github.io/automationnation-actors/guides/analyse-app-reviews-with-ai/
 https://retracn.github.io/automationnation-actors/guides/how-to-scrape-app-store-reviews/
 https://retracn.github.io/automationnation-actors/guides/how-to-scrape-google-play-reviews/
+https://retracn.github.io/automationnation-actors/guides/track-brand-in-ai-search/
 https://retracn.github.io/automationnation-actors/llms.txt
