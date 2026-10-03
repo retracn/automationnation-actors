@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Google Trends Scraper &amp; API: keyword trends and Trending now | AutomationNation</title><meta name="description" content="Google Trends Scraper is an Apify Actor that extracts Google Trends data for any keywords and regions — interest over time, interest by region and city,…"><link rel="canonical" href="https://retracn.github.io/automationnation-actors/google-trends-scraper/">
+<meta property="og:title" content="Google Trends Scraper &amp; API: keyword trends and Trending now | AutomationNation"><meta property="og:description" content="Google Trends Scraper is an Apify Actor that extracts Google Trends data for any keywords and regions — interest over time, interest by region and city,…"><meta property="og:type" content="website"><meta property="og:url" content="https://retracn.github.io/automationnation-actors/google-trends-scraper/">
+<style>
+:root{--bg:#fff;--fg:#1f2328;--muted:#59636e;--card:#f6f8fa;--border:#d1d9e0;--accent:#0b57d0;--accent-fg:#fff}
+@media (prefers-color-scheme: dark){:root{--bg:#0d1117;--fg:#e6edf3;--muted:#9198a1;--card:#161b22;--border:#30363d;--accent:#4493f8;--accent-fg:#0d1117}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:860px;margin:0 auto;padding:32px 16px 64px}a{color:var(--accent)}h1{font-size:2rem;line-height:1.25;margin:.2em 0 .4em}h2{margin-top:2em;border-bottom:1px solid var(--border);padding-bottom:.3em}
+.lead{font-size:1.1rem}.btn{display:inline-block;background:var(--accent);color:var(--accent-fg);padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600;margin:8px 8px 8px 0}
+.muted{color:var(--muted)}pre{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px;overflow-x:auto;font-size:.88rem}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px}.card h3{margin:.1em 0 .4em;font-size:1.05rem}
+details{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin:8px 0}summary{font-weight:600;cursor:pointer}nav{font-size:.9rem;margin-bottom:12px}footer{margin-top:48px;font-size:.85rem;color:var(--muted)}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Google Trends Scraper", "description": "Google Trends Scraper is an Apify Actor that extracts Google Trends data for any keywords and regions — interest over time, interest by region and city, rising and top related queries, and the trending searches for any country — at $1 per 1,000 keyword reports. It works as a Google Trends API: call it from code, schedule it for trend alerts, or let AI agents use it through Apify's MCP server.", "applicationCategory": "BusinessApplication", "operatingSystem": "Web (Apify platform)", "url": "https://apify.com/automationnation/google-trends-scraper", "offers": {"@type": "Offer", "price": "0.001", "priceCurrency": "USD", "description": "$1 per 1,000 keyword reports ($0.27–$0.90 on paid plans) · $0.50 per 1,000 trending searches"}, "publisher": {"@type": "Organization", "name": "AutomationNation", "url": "https://apify.com/automationnation"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is there an official Google Trends API?", "acceptedAnswer": {"@type": "Answer", "text": "Google opened an official Google Trends API to a small group of alpha testers in 2025. For everyone else, Google Trends Scraper on Apify provides Google Trends data through Apify's REST API, Python and JavaScript clients, integrations and MCP."}}, {"@type": "Question", "name": "What does Google Trends Scraper return?", "acceptedAnswer": {"@type": "Answer", "text": "For each keyword: interest over time (0–100 with dates), trend direction, change %, peak date, a one-sentence summary, interest by region and city, and top and rising related queries. Trending now rows include search volume, growth %, start time, related searches and news articles."}}, {"@type": "Question", "name": "Can it compare more than 5 keywords?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. With Compare all search terms on one scale, terms are batched around a shared anchor term and rescaled so any number of terms sit on one 0–100 scale."}}, {"@type": "Question", "name": "How much does it cost?", "acceptedAnswer": {"@type": "Answer", "text": "$1 per 1,000 keyword reports and $0.50 per 1,000 trending searches on Apify's Free plan, less on paid plans. Keywords without enough search volume and failed searches are free."}}, {"@type": "Question", "name": "Can I switch from apify/google-trends-scraper?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Keep your input (searchTerms, isMultiple, timeRange, customTimeRange, geo, category, startUrls, spreadsheetId, maxItems) and change the Actor ID; rows keep that Actor's field names next to the cleaner ones."}}]}</script></head>
+<body><main><nav><a href="https://retracn.github.io/automationnation-actors/">AutomationNation Actors</a> › Google Trends Scraper</nav>
+<h1>Google Trends Scraper &amp; API: keyword trends and Trending now</h1>
+<p class="lead">Google Trends Scraper is an Apify Actor that extracts Google Trends data for any keywords and regions — interest over time, interest by region and city, rising and top related queries, and the trending searches for any country — at $1 per 1,000 keyword reports. It works as a Google Trends API: call it from code, schedule it for trend alerts, or let AI agents use it through Apify&#x27;s MCP server.</p>
+<p><a class="btn" href="https://apify.com/automationnation/google-trends-scraper">Run it on Apify</a> <span class="muted">$1 per 1,000 keyword reports ($0.27–$0.90 on paid plans) · $0.50 per 1,000 trending searches</span></p>
+<h2>Quick facts</h2><ul><li>One row per keyword: the 0–100 timeline with dates, trend direction and change %, peak date, a one-sentence summary, interest by country / state / city, and top and rising related queries with growth % and Breakout flags.</li><li>Trending now for any country: search volume, growth %, start time, related searches and news articles; Only new trends mode turns scheduled runs into alerts.</li><li>Compare up to 5 terms like Google Trends, or any number of terms on one scale (rescaled through a shared anchor term).</li><li>Every Google Trends option: any country or subregion, past hour to 2004–present or custom dates, category, and web / image / news / YouTube / Shopping search; input as keywords, Google Trends URLs or a Google Sheet.</li><li>Price: $1 per 1,000 keyword reports and $0.50 per 1,000 trending searches on the Free plan (lower on paid plans); keywords with too little search volume are free. Apify&#x27;s free $5 monthly credit covers about 5,000 keyword reports.</li><li>Same input fields as apify/google-trends-scraper, and every row also includes that Actor&#x27;s output fields.</li></ul>
+<h2>Example input</h2><pre><code>{
+  &quot;searchTerms&quot;: [
+    &quot;chatgpt&quot;,
+    &quot;gemini&quot;,
+    &quot;claude ai&quot;
+  ],
+  &quot;geo&quot;: &quot;US&quot;,
+  &quot;timeRange&quot;: &quot;today 12-m&quot;
+}</code></pre>
+<h2>Run it from code</h2><h3>REST API (cURL)</h3><pre><code>curl -X POST &quot;https://api.apify.com/v2/acts/automationnation~google-trends-scraper/run-sync-get-dataset-items?token=$APIFY_TOKEN&quot; \
+  -H &quot;Content-Type: application/json&quot; \
+  -d &#x27;{&quot;searchTerms&quot;: [&quot;chatgpt&quot;, &quot;gemini&quot;, &quot;claude ai&quot;], &quot;geo&quot;: &quot;US&quot;, &quot;timeRange&quot;: &quot;today 12-m&quot;}&#x27;</code></pre>
+<h3>Python</h3><pre><code># pip install apify-client
+from apify_client import ApifyClient
+
+client = ApifyClient(&quot;YOUR_APIFY_TOKEN&quot;)
+run = client.actor(&quot;automationnation/google-trends-scraper&quot;).call(run_input={
+  &quot;searchTerms&quot;: [
+    &quot;chatgpt&quot;,
+    &quot;gemini&quot;,
+    &quot;claude ai&quot;
+  ],
+  &quot;geo&quot;: &quot;US&quot;,
+  &quot;timeRange&quot;: &quot;today 12-m&quot;
+})
+for item in client.dataset(run[&quot;defaultDatasetId&quot;]).iterate_items():
+    print(item.get(&quot;searchTerm&quot;), item.get(&quot;trendDirection&quot;), item.get(&quot;changePercent&quot;), item.get(&quot;summary&quot;))</code></pre><h3>JavaScript / Node.js</h3><pre><code>// npm install apify-client
+import { ApifyClient } from &#x27;apify-client&#x27;;
+
+const client = new ApifyClient({ token: &#x27;YOUR_APIFY_TOKEN&#x27; });
+const run = await client.actor(&#x27;automationnation/google-trends-scraper&#x27;).call({
+  &quot;searchTerms&quot;: [
+    &quot;chatgpt&quot;,
+    &quot;gemini&quot;,
+    &quot;claude ai&quot;
+  ],
+  &quot;geo&quot;: &quot;US&quot;,
+  &quot;timeRange&quot;: &quot;today 12-m&quot;
+});
+const { items } = await client.dataset(run.defaultDatasetId).listItems();
+for (const item of items) console.log(item.searchTerm, item.trendDirection, item.changePercent, item.summary);</code></pre>
+<h2>Use it with AI agents (MCP)</h2>
+<p>Connect AI assistants such as Claude, ChatGPT or Cursor through Apify's MCP server. Hosted URL:</p><pre><code>https://mcp.apify.com?tools=automationnation/google-trends-scraper</code></pre>
+<p>Or run it locally in Claude Desktop / Cursor:</p><pre><code>{
+  &quot;mcpServers&quot;: {
+    &quot;google-trends-scraper&quot;: {
+      &quot;command&quot;: &quot;npx&quot;,
+      &quot;args&quot;: [
+        &quot;-y&quot;,
+        &quot;@apify/actors-mcp-server&quot;,
+        &quot;--tools&quot;,
+        &quot;automationnation/google-trends-scraper&quot;
+      ],
+      &quot;env&quot;: {
+        &quot;APIFY_TOKEN&quot;: &quot;YOUR_APIFY_TOKEN&quot;
+      }
+    }
+  }
+}</code></pre>
+<h2>FAQ</h2><details open><summary>Is there an official Google Trends API?</summary><p>Google opened an official Google Trends API to a small group of alpha testers in 2025. For everyone else, Google Trends Scraper on Apify provides Google Trends data through Apify&#x27;s REST API, Python and JavaScript clients, integrations and MCP.</p></details><details open><summary>What does Google Trends Scraper return?</summary><p>For each keyword: interest over time (0–100 with dates), trend direction, change %, peak date, a one-sentence summary, interest by region and city, and top and rising related queries. Trending now rows include search volume, growth %, start time, related searches and news articles.</p></details><details open><summary>Can it compare more than 5 keywords?</summary><p>Yes. With Compare all search terms on one scale, terms are batched around a shared anchor term and rescaled so any number of terms sit on one 0–100 scale.</p></details><details open><summary>How much does it cost?</summary><p>$1 per 1,000 keyword reports and $0.50 per 1,000 trending searches on Apify&#x27;s Free plan, less on paid plans. Keywords without enough search volume and failed searches are free.</p></details><details open><summary>Can I switch from apify/google-trends-scraper?</summary><p>Yes. Keep your input (searchTerms, isMultiple, timeRange, customTimeRange, geo, category, startUrls, spreadsheetId, maxItems) and change the Actor ID; rows keep that Actor&#x27;s field names next to the cleaner ones.</p></details>
+<p>Step-by-step guide: <a href="https://retracn.github.io/automationnation-actors/guides/how-to-scrape-google-trends/">How to scrape Google Trends in 2026 (no code, API or AI agent)</a></p>
+<p><a class="btn" href="https://apify.com/automationnation/google-trends-scraper">Open Google Trends Scraper on Apify Store</a></p><footer>Built by AutomationNation · Actors run on the <a href="https://apify.com">Apify</a> platform · <a href="https://retracn.github.io/automationnation-actors/">All Actors</a> · <a href="https://retracn.github.io/automationnation-actors/llms.txt">llms.txt</a></footer></main></body></html>
