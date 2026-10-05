@@ -45,4 +45,7 @@ https://retracn.github.io/automationnation-actors/guides/google-ads-transparency
 https://retracn.github.io/automationnation-actors/guides/how-to-scrape-google-news/
 https://retracn.github.io/automationnation-actors/guides/how-to-scrape-google-images/
 https://retracn.github.io/automationnation-actors/guides/how-to-scrape-google-videos/
+https://retracn.github.io/automationnation-actors/guides/pytrends-alternative/
+https://retracn.github.io/automationnation-actors/guides/youtube-transcript-api-blocked/
+https://retracn.github.io/automationnation-actors/guides/app-store-scraper-reviews-not-working/
 https://retracn.github.io/automationnation-actors/llms.txt
