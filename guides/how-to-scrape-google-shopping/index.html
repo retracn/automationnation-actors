@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How to scrape Google Shopping in 2026 (prices, stores and reviews)</title><meta name="description" content="Get Google Shopping product prices, stores, discounts, ratings and reviews as data: no code, via API or from an AI agent."><link rel="canonical" href="https://retracn.github.io/automationnation-actors/guides/how-to-scrape-google-shopping/">
+<meta property="og:title" content="How to scrape Google Shopping in 2026 (prices, stores and reviews)"><meta property="og:description" content="Get Google Shopping product prices, stores, discounts, ratings and reviews as data: no code, via API or from an AI agent."><meta property="og:type" content="website"><meta property="og:url" content="https://retracn.github.io/automationnation-actors/guides/how-to-scrape-google-shopping/">
+<style>
+:root{--bg:#fff;--fg:#1f2328;--muted:#59636e;--card:#f6f8fa;--border:#d1d9e0;--accent:#0b57d0;--accent-fg:#fff}
+@media (prefers-color-scheme: dark){:root{--bg:#0d1117;--fg:#e6edf3;--muted:#9198a1;--card:#161b22;--border:#30363d;--accent:#4493f8;--accent-fg:#0d1117}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:860px;margin:0 auto;padding:32px 16px 64px}a{color:var(--accent)}h1{font-size:2rem;line-height:1.25;margin:.2em 0 .4em}h2{margin-top:2em;border-bottom:1px solid var(--border);padding-bottom:.3em}
+.lead{font-size:1.1rem}.btn{display:inline-block;background:var(--accent);color:var(--accent-fg);padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600;margin:8px 8px 8px 0}
+.muted{color:var(--muted)}pre{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px;overflow-x:auto;font-size:.88rem}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px}.card h3{margin:.1em 0 .4em;font-size:1.05rem}
+details{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin:8px 0}summary{font-weight:600;cursor:pointer}nav{font-size:.9rem;margin-bottom:12px}footer{margin-top:48px;font-size:.85rem;color:var(--muted)}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "How to scrape Google Shopping in 2026 (prices, stores and reviews)", "description": "Get Google Shopping product prices, stores, discounts, ratings and reviews as data: no code, via API or from an AI agent.", "step": [{"@type": "HowToStep", "position": 1, "name": "Create a free Apify account", "text": "Sign up at apify.com. The free plan includes $5 of monthly credit, about 5,000 products with this Actor, and needs no credit card."}, {"@type": "HowToStep", "position": 2, "name": "Open Google Shopping Scraper", "text": "Go to apify.com/automationnation/google-shopping-scraper and click Try for free."}, {"@type": "HowToStep", "position": 3, "name": "Enter searches and a country", "text": "Add product searches such as \"air fryer\" and the country (us, gb, de…). Prices come in that country's currency."}, {"@type": "HowToStep", "position": 4, "name": "Run and export", "text": "Click Start and download JSON, CSV or Excel, or read the dataset through the API."}, {"@type": "HowToStep", "position": 5, "name": "Automate price monitoring", "text": "Schedule the Actor daily and send results to Google Sheets, Slack or a webhook through Apify integrations."}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is it legal to scrape Google Shopping?", "acceptedAnswer": {"@type": "Answer", "text": "It reads public results like a person searching. Use the data in line with the laws and terms that apply to you."}}]}</script></head>
+<body><main><nav><a href="https://retracn.github.io/automationnation-actors/">AutomationNation Actors</a> › Guides</nav>
+<h1>How to scrape Google Shopping in 2026 (prices, stores and reviews)</h1><p class="lead">Google has no public API for Google Shopping results, so the practical way to get them is a ready-made scraper. With Google Shopping Scraper on Apify you enter a product search and country, click Start, and get about 50 products in seconds, each with price, discount, store, rating and reviews, for $1 per 1,000 products.</p>
+<p><a class="btn" href="https://apify.com/automationnation/google-shopping-scraper">Open Google Shopping Scraper on Apify</a> <span class="muted">$1 per 1,000 products ($0.80 on Gold and above)</span></p>
+<h2>Step by step</h2><ol><li><strong>Create a free Apify account.</strong> Sign up at apify.com. The free plan includes $5 of monthly credit, about 5,000 products with this Actor, and needs no credit card.</li><li><strong>Open Google Shopping Scraper.</strong> Go to apify.com/automationnation/google-shopping-scraper and click Try for free.</li><li><strong>Enter searches and a country.</strong> Add product searches such as &quot;air fryer&quot; and the country (us, gb, de…). Prices come in that country&#x27;s currency.</li><li><strong>Run and export.</strong> Click Start and download JSON, CSV or Excel, or read the dataset through the API.</li><li><strong>Automate price monitoring.</strong> Schedule the Actor daily and send results to Google Sheets, Slack or a webhook through Apify integrations.</li></ol>
+<h2>Do it from code</h2><h3>Python</h3><pre><code># pip install apify-client
+from apify_client import ApifyClient
+
+client = ApifyClient(&quot;YOUR_APIFY_TOKEN&quot;)
+run = client.actor(&quot;automationnation/google-shopping-scraper&quot;).call(run_input={
+  &quot;queries&quot;: [
+    &quot;wireless earbuds&quot;
+  ],
+  &quot;country&quot;: &quot;us&quot;,
+  &quot;maxResultsPerQuery&quot;: 50
+})
+for item in client.dataset(run[&quot;defaultDatasetId&quot;]).iterate_items():
+    print(item.get(&quot;title&quot;), item.get(&quot;price&quot;), item.get(&quot;store&quot;), item.get(&quot;rating&quot;))</code></pre>
+<h3>REST API (cURL)</h3><pre><code>curl -X POST &quot;https://api.apify.com/v2/acts/automationnation~google-shopping-scraper/run-sync-get-dataset-items?token=$APIFY_TOKEN&quot; \
+  -H &quot;Content-Type: application/json&quot; \
+  -d &#x27;{&quot;queries&quot;: [&quot;wireless earbuds&quot;], &quot;country&quot;: &quot;us&quot;, &quot;maxResultsPerQuery&quot;: 50}&#x27;</code></pre>
+<h2>From an AI assistant (MCP)</h2><p>Add this MCP server URL to Claude, ChatGPT or Cursor and ask in plain English:</p><pre><code>https://mcp.apify.com?tools=automationnation/google-shopping-scraper</code></pre>
+<h2>Alternatives</h2><p>Other options: SerpApi sells a Google Shopping API as a monthly subscription; Google&#x27;s Content API only manages your own Merchant Center products.</p>
+<h2>FAQ</h2><details open><summary>Is it legal to scrape Google Shopping?</summary><p>It reads public results like a person searching. Use the data in line with the laws and terms that apply to you.</p></details>
+<p class="muted">Written by AutomationNation, the developer of Google Shopping Scraper. Prices checked October 2026.</p><footer>Built by AutomationNation · Actors run on the <a href="https://apify.com">Apify</a> platform · <a href="https://retracn.github.io/automationnation-actors/">All Actors</a> · <a href="https://retracn.github.io/automationnation-actors/llms.txt">llms.txt</a></footer></main></body></html>

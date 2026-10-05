@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Google Ads Transparency Scraper &amp; API: competitors&#x27; ads | AutomationNation</title><meta name="description" content="Google Ads Transparency Scraper is an Apify Actor that returns every ad an advertiser or domain runs on Google Search, YouTube, Display and Shopping, from…"><link rel="canonical" href="https://retracn.github.io/automationnation-actors/google-ads-transparency-scraper/">
+<meta property="og:title" content="Google Ads Transparency Scraper &amp; API: competitors&#x27; ads | AutomationNation"><meta property="og:description" content="Google Ads Transparency Scraper is an Apify Actor that returns every ad an advertiser or domain runs on Google Search, YouTube, Display and Shopping, from…"><meta property="og:type" content="website"><meta property="og:url" content="https://retracn.github.io/automationnation-actors/google-ads-transparency-scraper/">
+<style>
+:root{--bg:#fff;--fg:#1f2328;--muted:#59636e;--card:#f6f8fa;--border:#d1d9e0;--accent:#0b57d0;--accent-fg:#fff}
+@media (prefers-color-scheme: dark){:root{--bg:#0d1117;--fg:#e6edf3;--muted:#9198a1;--card:#161b22;--border:#30363d;--accent:#4493f8;--accent-fg:#0d1117}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:860px;margin:0 auto;padding:32px 16px 64px}a{color:var(--accent)}h1{font-size:2rem;line-height:1.25;margin:.2em 0 .4em}h2{margin-top:2em;border-bottom:1px solid var(--border);padding-bottom:.3em}
+.lead{font-size:1.1rem}.btn{display:inline-block;background:var(--accent);color:var(--accent-fg);padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600;margin:8px 8px 8px 0}
+.muted{color:var(--muted)}pre{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px;overflow-x:auto;font-size:.88rem}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px}.card h3{margin:.1em 0 .4em;font-size:1.05rem}
+details{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin:8px 0}summary{font-weight:600;cursor:pointer}nav{font-size:.9rem;margin-bottom:12px}footer{margin-top:48px;font-size:.85rem;color:var(--muted)}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Google Ads Transparency Scraper", "description": "Google Ads Transparency Scraper is an Apify Actor that returns every ad an advertiser or domain runs on Google Search, YouTube, Display and Shopping, from Google's Ads Transparency Center: format, first and last shown dates, days running, ad text and images, preview and a link to each ad, filtered by country and format, at $1 per 1,000 ads.", "applicationCategory": "BusinessApplication", "operatingSystem": "Web (Apify platform)", "url": "https://apify.com/automationnation/google-ads-transparency-scraper", "offers": {"@type": "Offer", "price": "0.001", "priceCurrency": "USD", "description": "$1 per 1,000 ads ($0.80 on Gold and above)"}, "publisher": {"@type": "Organization", "name": "AutomationNation", "url": "https://apify.com/automationnation"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is Google's Ads Transparency Center?", "acceptedAnswer": {"@type": "Answer", "text": "A public Google tool listing the ads verified advertisers run on Search, YouTube, Display and Shopping. This Actor turns it into data."}}, {"@type": "Question", "name": "Can I see ad spend?", "acceptedAnswer": {"@type": "Answer", "text": "No: Google publishes spend and targeting only for political ads."}}]}</script></head>
+<body><main><nav><a href="https://retracn.github.io/automationnation-actors/">AutomationNation Actors</a> › Google Ads Transparency Scraper</nav>
+<h1>Google Ads Transparency Scraper &amp; API: competitors&#x27; ads</h1>
+<p class="lead">Google Ads Transparency Scraper is an Apify Actor that returns every ad an advertiser or domain runs on Google Search, YouTube, Display and Shopping, from Google&#x27;s Ads Transparency Center: format, first and last shown dates, days running, ad text and images, preview and a link to each ad, filtered by country and format, at $1 per 1,000 ads.</p>
+<p><a class="btn" href="https://apify.com/automationnation/google-ads-transparency-scraper">Run it on Apify</a> <span class="muted">$1 per 1,000 ads ($0.80 on Gold and above)</span></p>
+<h2>Quick facts</h2><ul><li>One row per ad: advertiser, ad ID, format, first and last shown, days running, headline and texts, images, landing page, YouTube video, preview and link.</li><li>Look up advertisers by name, domain or ID; filter by 50+ countries and format.</li><li>Price: $1 per 1,000 ads with ad text included.</li></ul>
+<h2>Example input</h2><pre><code>{
+  &quot;advertisers&quot;: [
+    &quot;nike.com&quot;
+  ],
+  &quot;region&quot;: &quot;us&quot;,
+  &quot;maxAdsPerAdvertiser&quot;: 100
+}</code></pre>
+<h2>Run it from code</h2><h3>REST API (cURL)</h3><pre><code>curl -X POST &quot;https://api.apify.com/v2/acts/automationnation~google-ads-transparency-scraper/run-sync-get-dataset-items?token=$APIFY_TOKEN&quot; \
+  -H &quot;Content-Type: application/json&quot; \
+  -d &#x27;{&quot;advertisers&quot;: [&quot;nike.com&quot;], &quot;region&quot;: &quot;us&quot;, &quot;maxAdsPerAdvertiser&quot;: 100}&#x27;</code></pre>
+<h3>Python</h3><pre><code># pip install apify-client
+from apify_client import ApifyClient
+
+client = ApifyClient(&quot;YOUR_APIFY_TOKEN&quot;)
+run = client.actor(&quot;automationnation/google-ads-transparency-scraper&quot;).call(run_input={
+  &quot;advertisers&quot;: [
+    &quot;nike.com&quot;
+  ],
+  &quot;region&quot;: &quot;us&quot;,
+  &quot;maxAdsPerAdvertiser&quot;: 100
+})
+for item in client.dataset(run[&quot;defaultDatasetId&quot;]).iterate_items():
+    print(item.get(&quot;advertiserName&quot;), item.get(&quot;format&quot;), item.get(&quot;headline&quot;), item.get(&quot;daysShown&quot;))</code></pre><h3>JavaScript / Node.js</h3><pre><code>// npm install apify-client
+import { ApifyClient } from &#x27;apify-client&#x27;;
+
+const client = new ApifyClient({ token: &#x27;YOUR_APIFY_TOKEN&#x27; });
+const run = await client.actor(&#x27;automationnation/google-ads-transparency-scraper&#x27;).call({
+  &quot;advertisers&quot;: [
+    &quot;nike.com&quot;
+  ],
+  &quot;region&quot;: &quot;us&quot;,
+  &quot;maxAdsPerAdvertiser&quot;: 100
+});
+const { items } = await client.dataset(run.defaultDatasetId).listItems();
+for (const item of items) console.log(item.advertiserName, item.format, item.headline, item.daysShown);</code></pre>
+<h2>Use it with AI agents (MCP)</h2>
+<p>Connect AI assistants such as Claude, ChatGPT or Cursor through Apify's MCP server. Hosted URL:</p><pre><code>https://mcp.apify.com?tools=automationnation/google-ads-transparency-scraper</code></pre>
+<p>Or run it locally in Claude Desktop / Cursor:</p><pre><code>{
+  &quot;mcpServers&quot;: {
+    &quot;google-ads-transparency-scraper&quot;: {
+      &quot;command&quot;: &quot;npx&quot;,
+      &quot;args&quot;: [
+        &quot;-y&quot;,
+        &quot;@apify/actors-mcp-server&quot;,
+        &quot;--tools&quot;,
+        &quot;automationnation/google-ads-transparency-scraper&quot;
+      ],
+      &quot;env&quot;: {
+        &quot;APIFY_TOKEN&quot;: &quot;YOUR_APIFY_TOKEN&quot;
+      }
+    }
+  }
+}</code></pre>
+<h2>FAQ</h2><details open><summary>What is Google&#x27;s Ads Transparency Center?</summary><p>A public Google tool listing the ads verified advertisers run on Search, YouTube, Display and Shopping. This Actor turns it into data.</p></details><details open><summary>Can I see ad spend?</summary><p>No: Google publishes spend and targeting only for political ads.</p></details>
+<p>Step-by-step guide: <a href="https://retracn.github.io/automationnation-actors/guides/google-ads-transparency-center-data/">How to see a competitor&#x27;s Google ads (Ads Transparency Center data)</a></p>
+<p><a class="btn" href="https://apify.com/automationnation/google-ads-transparency-scraper">Open Google Ads Transparency Scraper on Apify Store</a></p><footer>Built by AutomationNation · Actors run on the <a href="https://apify.com">Apify</a> platform · <a href="https://retracn.github.io/automationnation-actors/">All Actors</a> · <a href="https://retracn.github.io/automationnation-actors/llms.txt">llms.txt</a></footer></main></body></html>

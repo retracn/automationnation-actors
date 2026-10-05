@@ -1,6 +1,14 @@
 https://retracn.github.io/automationnation-actors/
 https://retracn.github.io/automationnation-actors/ai-visibility-tracker/
 https://retracn.github.io/automationnation-actors/google-jobs-scraper/
+https://retracn.github.io/automationnation-actors/youtube-transcript-scraper/
+https://retracn.github.io/automationnation-actors/google-shopping-scraper/
+https://retracn.github.io/automationnation-actors/google-flights-scraper/
+https://retracn.github.io/automationnation-actors/google-hotels-scraper/
+https://retracn.github.io/automationnation-actors/google-ads-transparency-scraper/
+https://retracn.github.io/automationnation-actors/google-news-scraper/
+https://retracn.github.io/automationnation-actors/google-images-scraper/
+https://retracn.github.io/automationnation-actors/google-videos-scraper/
 https://retracn.github.io/automationnation-actors/google-trends-scraper/
 https://retracn.github.io/automationnation-actors/app-store-reviews-scraper/
 https://retracn.github.io/automationnation-actors/google-play-reviews-scraper/
@@ -23,4 +31,12 @@ https://retracn.github.io/automationnation-actors/guides/analyse-app-reviews-wit
 https://retracn.github.io/automationnation-actors/guides/how-to-scrape-app-store-reviews/
 https://retracn.github.io/automationnation-actors/guides/how-to-scrape-google-play-reviews/
 https://retracn.github.io/automationnation-actors/guides/track-brand-in-ai-search/
+https://retracn.github.io/automationnation-actors/guides/how-to-scrape-google-shopping/
+https://retracn.github.io/automationnation-actors/guides/how-to-get-youtube-transcripts/
+https://retracn.github.io/automationnation-actors/guides/how-to-scrape-google-flights/
+https://retracn.github.io/automationnation-actors/guides/how-to-scrape-google-hotels/
+https://retracn.github.io/automationnation-actors/guides/google-ads-transparency-center-data/
+https://retracn.github.io/automationnation-actors/guides/how-to-scrape-google-news/
+https://retracn.github.io/automationnation-actors/guides/how-to-scrape-google-images/
+https://retracn.github.io/automationnation-actors/guides/how-to-scrape-google-videos/
 https://retracn.github.io/automationnation-actors/llms.txt
