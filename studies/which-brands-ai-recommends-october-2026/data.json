@@ -1,0 +1,1631 @@
+{
+ "title": "Which brands do AI assistants recommend? 115 answers from Google AI Overviews, Gemini and Claude (October 2026)",
+ "date": "5 October 2026",
+ "categories": [
+  {
+   "key": "crm",
+   "label": "CRM software",
+   "answers": 20,
+   "answersByEngine": {
+    "google-ai-overviews": 7,
+    "claude": 8,
+    "gemini": 5
+   },
+   "prompts": [
+    "What is the best CRM software?",
+    "What is the best CRM for small businesses?",
+    "What is the best free CRM?",
+    "Which CRM should a startup use?",
+    "What are the best Salesforce alternatives?",
+    "What is the easiest CRM to use?",
+    "What is the best CRM for real estate agents?",
+    "What CRM do sales teams recommend in 2026?"
+   ],
+   "share": [
+    [
+     "HubSpot",
+     18,
+     90
+    ],
+    [
+     "Zoho CRM",
+     16,
+     80
+    ],
+    [
+     "Pipedrive",
+     14,
+     70
+    ],
+    [
+     "Freshsales",
+     11,
+     55
+    ],
+    [
+     "Salesforce",
+     9,
+     45
+    ],
+    [
+     "monday.com",
+     6,
+     30
+    ],
+    [
+     "Less Annoying CRM",
+     4,
+     20
+    ],
+    [
+     "Microsoft Dynamics 365",
+     3,
+     15
+    ],
+    [
+     "Capsule",
+     2,
+     10
+    ],
+    [
+     "Keap",
+     1,
+     5
+    ],
+    [
+     "Nimble",
+     1,
+     5
+    ],
+    [
+     "Attio",
+     1,
+     5
+    ],
+    [
+     "Folk",
+     1,
+     5
+    ]
+   ],
+   "shareByEngine": {
+    "Google AI Overviews": [
+     [
+      "HubSpot",
+      86
+     ],
+     [
+      "Zoho CRM",
+      71
+     ],
+     [
+      "Pipedrive",
+      43
+     ],
+     [
+      "Salesforce",
+      29
+     ],
+     [
+      "Freshsales",
+      29
+     ]
+    ],
+    "Claude": [
+     [
+      "HubSpot",
+      88
+     ],
+     [
+      "Pipedrive",
+      88
+     ],
+     [
+      "Zoho CRM",
+      75
+     ],
+     [
+      "Salesforce",
+      50
+     ],
+     [
+      "Freshsales",
+      50
+     ]
+    ],
+    "Gemini": [
+     [
+      "HubSpot",
+      100
+     ],
+     [
+      "Zoho CRM",
+      100
+     ],
+     [
+      "Freshsales",
+      100
+     ],
+     [
+      "Pipedrive",
+      80
+     ],
+     [
+      "monday.com",
+      80
+     ]
+    ]
+   },
+   "firstPick": [
+    [
+     "HubSpot",
+     11
+    ],
+    [
+     "Salesforce",
+     5
+    ],
+    [
+     "Nimble",
+     1
+    ],
+    [
+     "Pipedrive",
+     1
+    ],
+    [
+     "Less Annoying CRM",
+     1
+    ]
+   ],
+   "firstPickByEngine": {
+    "Google AI Overviews": [
+     "HubSpot",
+     3
+    ],
+    "Claude": [
+     "HubSpot",
+     4
+    ],
+    "Gemini": [
+     "HubSpot",
+     4
+    ]
+   },
+   "topDomains": [
+    [
+     "youtube.com",
+     8
+    ],
+    [
+     "zapier.com",
+     7
+    ],
+    [
+     "slack.com",
+     6
+    ],
+    [
+     "uschamber.com",
+     6
+    ],
+    [
+     "pcmag.com",
+     5
+    ],
+    [
+     "forbes.com",
+     5
+    ],
+    [
+     "fayedigital.com",
+     4
+    ],
+    [
+     "reddit.com",
+     4
+    ],
+    [
+     "monday.com",
+     4
+    ],
+    [
+     "salesforce.com",
+     3
+    ],
+    [
+     "pipedrive.com",
+     3
+    ],
+    [
+     "hubspot.com",
+     3
+    ]
+   ]
+  },
+  {
+   "key": "project",
+   "label": "Project management tools",
+   "answers": 19,
+   "answersByEngine": {
+    "claude": 8,
+    "gemini": 3,
+    "google-ai-overviews": 8
+   },
+   "prompts": [
+    "What is the best project management software?",
+    "What is the best project management tool for small teams?",
+    "What is the best free project management app?",
+    "Which project management tool is best for software development?",
+    "What are the best Asana alternatives?",
+    "What is the easiest project management tool to learn?",
+    "What project management software do agencies use?",
+    "What is the best project management tool for remote teams?"
+   ],
+   "share": [
+    [
+     "Asana",
+     18,
+     95
+    ],
+    [
+     "ClickUp",
+     17,
+     89
+    ],
+    [
+     "Trello",
+     16,
+     84
+    ],
+    [
+     "monday.com",
+     13,
+     68
+    ],
+    [
+     "Jira",
+     10,
+     53
+    ],
+    [
+     "Basecamp",
+     7,
+     37
+    ],
+    [
+     "Wrike",
+     7,
+     37
+    ],
+    [
+     "Notion",
+     6,
+     32
+    ],
+    [
+     "Linear",
+     4,
+     21
+    ],
+    [
+     "Smartsheet",
+     3,
+     16
+    ],
+    [
+     "Teamwork",
+     1,
+     5
+    ]
+   ],
+   "shareByEngine": {
+    "Claude": [
+     [
+      "Asana",
+      88
+     ],
+     [
+      "Trello",
+      88
+     ],
+     [
+      "ClickUp",
+      88
+     ],
+     [
+      "monday.com",
+      75
+     ],
+     [
+      "Basecamp",
+      62
+     ]
+    ],
+    "Gemini": [
+     [
+      "Asana",
+      100
+     ],
+     [
+      "Trello",
+      100
+     ],
+     [
+      "monday.com",
+      100
+     ],
+     [
+      "ClickUp",
+      100
+     ],
+     [
+      "Jira",
+      67
+     ]
+    ],
+    "Google AI Overviews": [
+     [
+      "Asana",
+      100
+     ],
+     [
+      "ClickUp",
+      88
+     ],
+     [
+      "Trello",
+      75
+     ],
+     [
+      "monday.com",
+      50
+     ],
+     [
+      "Jira",
+      50
+     ]
+    ]
+   },
+   "firstPick": [
+    [
+     "ClickUp",
+     6
+    ],
+    [
+     "Asana",
+     6
+    ],
+    [
+     "Trello",
+     3
+    ],
+    [
+     "monday.com",
+     2
+    ],
+    [
+     "Jira",
+     2
+    ]
+   ],
+   "firstPickByEngine": {
+    "Claude": [
+     "ClickUp",
+     4
+    ],
+    "Gemini": [
+     "monday.com",
+     2
+    ],
+    "Google AI Overviews": [
+     "Asana",
+     4
+    ]
+   },
+   "topDomains": [
+    [
+     "clickup.com",
+     5
+    ],
+    [
+     "wrike.com",
+     5
+    ],
+    [
+     "project-management.com",
+     5
+    ],
+    [
+     "trello.com",
+     5
+    ],
+    [
+     "zapier.com",
+     5
+    ],
+    [
+     "ones.com",
+     4
+    ],
+    [
+     "youtube.com",
+     4
+    ],
+    [
+     "atlassian.com",
+     3
+    ],
+    [
+     "icagile.com",
+     3
+    ],
+    [
+     "larksuite.com",
+     3
+    ],
+    [
+     "paymoapp.com",
+     3
+    ],
+    [
+     "pcmag.com",
+     3
+    ]
+   ]
+  },
+  {
+   "key": "email",
+   "label": "Email marketing platforms",
+   "answers": 16,
+   "answersByEngine": {
+    "google-ai-overviews": 4,
+    "claude": 8,
+    "gemini": 4
+   },
+   "prompts": [
+    "What is the best email marketing software?",
+    "What is the best email marketing platform for small businesses?",
+    "What is the best free email marketing tool?",
+    "What is the best email marketing platform for ecommerce?",
+    "What are the best Mailchimp alternatives?",
+    "What is the best newsletter platform for creators?",
+    "Which email marketing tool has the best deliverability?",
+    "What email marketing software is easiest to use?"
+   ],
+   "share": [
+    [
+     "MailerLite",
+     14,
+     88
+    ],
+    [
+     "Brevo",
+     13,
+     81
+    ],
+    [
+     "Mailchimp",
+     12,
+     75
+    ],
+    [
+     "ActiveCampaign",
+     10,
+     62
+    ],
+    [
+     "Omnisend",
+     9,
+     56
+    ],
+    [
+     "Klaviyo",
+     7,
+     44
+    ],
+    [
+     "Constant Contact",
+     7,
+     44
+    ],
+    [
+     "Moosend",
+     5,
+     31
+    ],
+    [
+     "Kit",
+     4,
+     25
+    ],
+    [
+     "GetResponse",
+     3,
+     19
+    ],
+    [
+     "beehiiv",
+     2,
+     12
+    ],
+    [
+     "AWeber",
+     1,
+     6
+    ]
+   ],
+   "shareByEngine": {
+    "Google AI Overviews": [
+     [
+      "Brevo",
+      100
+     ],
+     [
+      "MailerLite",
+      75
+     ],
+     [
+      "Mailchimp",
+      50
+     ],
+     [
+      "ActiveCampaign",
+      50
+     ],
+     [
+      "Constant Contact",
+      50
+     ]
+    ],
+    "Claude": [
+     [
+      "MailerLite",
+      88
+     ],
+     [
+      "Mailchimp",
+      75
+     ],
+     [
+      "Brevo",
+      62
+     ],
+     [
+      "ActiveCampaign",
+      62
+     ],
+     [
+      "Omnisend",
+      50
+     ]
+    ],
+    "Gemini": [
+     [
+      "Mailchimp",
+      100
+     ],
+     [
+      "Brevo",
+      100
+     ],
+     [
+      "MailerLite",
+      100
+     ],
+     [
+      "Omnisend",
+      100
+     ],
+     [
+      "Klaviyo",
+      75
+     ]
+    ]
+   },
+   "firstPick": [
+    [
+     "MailerLite",
+     5
+    ],
+    [
+     "Mailchimp",
+     4
+    ],
+    [
+     "Brevo",
+     3
+    ],
+    [
+     "Klaviyo",
+     2
+    ],
+    [
+     "beehiiv",
+     1
+    ]
+   ],
+   "firstPickByEngine": {
+    "Google AI Overviews": [
+     "MailerLite",
+     2
+    ],
+    "Claude": [
+     "Mailchimp",
+     3
+    ],
+    "Gemini": [
+     "Brevo",
+     2
+    ]
+   },
+   "topDomains": [
+    [
+     "emailvendorselection.com",
+     6
+    ],
+    [
+     "zapier.com",
+     6
+    ],
+    [
+     "ventureharbour.com",
+     5
+    ],
+    [
+     "emailtooltester.com",
+     5
+    ],
+    [
+     "reddit.com",
+     4
+    ],
+    [
+     "guideflow.com",
+     4
+    ],
+    [
+     "sequenzy.com",
+     4
+    ],
+    [
+     "constantcontact.com",
+     4
+    ],
+    [
+     "youtube.com",
+     3
+    ],
+    [
+     "sender.net",
+     3
+    ],
+    [
+     "mailtrap.io",
+     3
+    ],
+    [
+     "brevo.com",
+     3
+    ]
+   ]
+  },
+  {
+   "key": "passwords",
+   "label": "Password managers",
+   "answers": 21,
+   "answersByEngine": {
+    "google-ai-overviews": 8,
+    "claude": 8,
+    "gemini": 5
+   },
+   "prompts": [
+    "What is the best password manager?",
+    "What is the best free password manager?",
+    "What is the most secure password manager?",
+    "What is the best password manager for families?",
+    "What is the best password manager for businesses?",
+    "What are the best LastPass alternatives?",
+    "Which password manager works best on iPhone and Windows?",
+    "Is it worth paying for a password manager, and which one?"
+   ],
+   "share": [
+    [
+     "1Password",
+     19,
+     90
+    ],
+    [
+     "Bitwarden",
+     18,
+     86
+    ],
+    [
+     "NordPass",
+     18,
+     86
+    ],
+    [
+     "RoboForm",
+     13,
+     62
+    ],
+    [
+     "Keeper",
+     11,
+     52
+    ],
+    [
+     "Proton Pass",
+     11,
+     52
+    ],
+    [
+     "Dashlane",
+     8,
+     38
+    ],
+    [
+     "LastPass",
+     4,
+     19
+    ],
+    [
+     "Apple Passwords",
+     2,
+     10
+    ]
+   ],
+   "shareByEngine": {
+    "Google AI Overviews": [
+     [
+      "1Password",
+      88
+     ],
+     [
+      "Bitwarden",
+      88
+     ],
+     [
+      "NordPass",
+      62
+     ],
+     [
+      "RoboForm",
+      38
+     ],
+     [
+      "Dashlane",
+      25
+     ]
+    ],
+    "Claude": [
+     [
+      "1Password",
+      100
+     ],
+     [
+      "NordPass",
+      100
+     ],
+     [
+      "Bitwarden",
+      75
+     ],
+     [
+      "Proton Pass",
+      75
+     ],
+     [
+      "RoboForm",
+      75
+     ]
+    ],
+    "Gemini": [
+     [
+      "Bitwarden",
+      100
+     ],
+     [
+      "Keeper",
+      100
+     ],
+     [
+      "NordPass",
+      100
+     ],
+     [
+      "1Password",
+      80
+     ],
+     [
+      "Dashlane",
+      80
+     ]
+    ]
+   },
+   "firstPick": [
+    [
+     "1Password",
+     8
+    ],
+    [
+     "Bitwarden",
+     6
+    ],
+    [
+     "NordPass",
+     4
+    ],
+    [
+     "LastPass",
+     2
+    ],
+    [
+     "Keeper",
+     1
+    ]
+   ],
+   "firstPickByEngine": {
+    "Google AI Overviews": [
+     "1Password",
+     5
+    ],
+    "Claude": [
+     "NordPass",
+     4
+    ],
+    "Gemini": [
+     "1Password",
+     2
+    ]
+   },
+   "topDomains": [
+    [
+     "allaboutcookies.org",
+     11
+    ],
+    [
+     "security.org",
+     10
+    ],
+    [
+     "youtube.com",
+     8
+    ],
+    [
+     "bitwarden.com",
+     7
+    ],
+    [
+     "passwordmanager.com",
+     7
+    ],
+    [
+     "pcmag.com",
+     6
+    ],
+    [
+     "1password.com",
+     6
+    ],
+    [
+     "zapier.com",
+     6
+    ],
+    [
+     "adblock-tester.com",
+     5
+    ],
+    [
+     "pcworld.com",
+     4
+    ],
+    [
+     "password-manager.cybernews.com",
+     4
+    ],
+    [
+     "cnet.com",
+     4
+    ]
+   ]
+  },
+  {
+   "key": "websites",
+   "label": "Website builders",
+   "answers": 21,
+   "answersByEngine": {
+    "google-ai-overviews": 8,
+    "claude": 8,
+    "gemini": 5
+   },
+   "prompts": [
+    "What is the best website builder?",
+    "What is the best website builder for small businesses?",
+    "What is the best free website builder?",
+    "What is the best website builder for a portfolio?",
+    "What is the easiest website builder for beginners?",
+    "What are the best Squarespace alternatives?",
+    "What is the best website builder for SEO?",
+    "Which website builder should I use for an online store?"
+   ],
+   "share": [
+    [
+     "Wix",
+     20,
+     95
+    ],
+    [
+     "Squarespace",
+     17,
+     81
+    ],
+    [
+     "Hostinger",
+     13,
+     62
+    ],
+    [
+     "Shopify",
+     11,
+     52
+    ],
+    [
+     "WordPress",
+     9,
+     43
+    ],
+    [
+     "Webflow",
+     8,
+     38
+    ],
+    [
+     "Carrd",
+     6,
+     29
+    ],
+    [
+     "Weebly",
+     4,
+     19
+    ],
+    [
+     "GoDaddy",
+     3,
+     14
+    ],
+    [
+     "Framer",
+     1,
+     5
+    ],
+    [
+     "Duda",
+     1,
+     5
+    ]
+   ],
+   "shareByEngine": {
+    "Google AI Overviews": [
+     [
+      "Wix",
+      100
+     ],
+     [
+      "Squarespace",
+      75
+     ],
+     [
+      "Shopify",
+      62
+     ],
+     [
+      "WordPress",
+      25
+     ],
+     [
+      "Hostinger",
+      25
+     ]
+    ],
+    "Claude": [
+     [
+      "Wix",
+      88
+     ],
+     [
+      "Squarespace",
+      88
+     ],
+     [
+      "Hostinger",
+      75
+     ],
+     [
+      "Shopify",
+      50
+     ],
+     [
+      "Webflow",
+      50
+     ]
+    ],
+    "Gemini": [
+     [
+      "Wix",
+      100
+     ],
+     [
+      "Hostinger",
+      100
+     ],
+     [
+      "Squarespace",
+      80
+     ],
+     [
+      "WordPress",
+      80
+     ],
+     [
+      "Webflow",
+      60
+     ]
+    ]
+   },
+   "firstPick": [
+    [
+     "Wix",
+     15
+    ],
+    [
+     "Squarespace",
+     3
+    ],
+    [
+     "Shopify",
+     2
+    ],
+    [
+     "WordPress",
+     1
+    ]
+   ],
+   "firstPickByEngine": {
+    "Google AI Overviews": [
+     "Wix",
+     5
+    ],
+    "Claude": [
+     "Wix",
+     5
+    ],
+    "Gemini": [
+     "Wix",
+     5
+    ]
+   },
+   "topDomains": [
+    [
+     "youtube.com",
+     9
+    ],
+    [
+     "website-builders.cybernews.com",
+     8
+    ],
+    [
+     "tooltester.com",
+     8
+    ],
+    [
+     "wix.com",
+     7
+    ],
+    [
+     "zapier.com",
+     6
+    ],
+    [
+     "sitebuilderreport.com",
+     6
+    ],
+    [
+     "websiteplanet.com",
+     6
+    ],
+    [
+     "reddit.com",
+     5
+    ],
+    [
+     "shopify.com",
+     5
+    ],
+    [
+     "techradar.com",
+     5
+    ],
+    [
+     "websitebuilderexpert.com",
+     5
+    ],
+    [
+     "squarespace.com",
+     4
+    ]
+   ]
+  },
+  {
+   "key": "vpn",
+   "label": "VPN services",
+   "answers": 18,
+   "answersByEngine": {
+    "claude": 8,
+    "gemini": 3,
+    "google-ai-overviews": 7
+   },
+   "prompts": [
+    "What is the best VPN?",
+    "What is the best free VPN?",
+    "What is the fastest VPN?",
+    "What is the best VPN for streaming?",
+    "What is the most private VPN?",
+    "What is the best cheap VPN?",
+    "What is the best VPN for travel?",
+    "Which VPN do security experts recommend?"
+   ],
+   "share": [
+    [
+     "NordVPN",
+     13,
+     72
+    ],
+    [
+     "Proton VPN",
+     13,
+     72
+    ],
+    [
+     "ExpressVPN",
+     9,
+     50
+    ],
+    [
+     "Surfshark",
+     9,
+     50
+    ],
+    [
+     "Private Internet Access",
+     4,
+     22
+    ],
+    [
+     "CyberGhost",
+     2,
+     11
+    ],
+    [
+     "Mullvad",
+     2,
+     11
+    ],
+    [
+     "Windscribe",
+     2,
+     11
+    ],
+    [
+     "TunnelBear",
+     1,
+     6
+    ]
+   ],
+   "shareByEngine": {
+    "Claude": [
+     [
+      "Proton VPN",
+      100
+     ],
+     [
+      "NordVPN",
+      75
+     ],
+     [
+      "Surfshark",
+      75
+     ],
+     [
+      "ExpressVPN",
+      62
+     ],
+     [
+      "Private Internet Access",
+      38
+     ]
+    ],
+    "Gemini": [
+     [
+      "NordVPN",
+      67
+     ],
+     [
+      "ExpressVPN",
+      67
+     ],
+     [
+      "Surfshark",
+      67
+     ],
+     [
+      "Proton VPN",
+      67
+     ],
+     [
+      "CyberGhost",
+      33
+     ]
+    ],
+    "Google AI Overviews": [
+     [
+      "NordVPN",
+      71
+     ],
+     [
+      "Proton VPN",
+      43
+     ],
+     [
+      "ExpressVPN",
+      29
+     ],
+     [
+      "Surfshark",
+      14
+     ],
+     [
+      "Mullvad",
+      14
+     ]
+    ]
+   },
+   "firstPick": [
+    [
+     "NordVPN",
+     8
+    ],
+    [
+     "Proton VPN",
+     5
+    ],
+    [
+     "Surfshark",
+     3
+    ],
+    [
+     "ExpressVPN",
+     1
+    ],
+    [
+     "Mullvad",
+     1
+    ]
+   ],
+   "firstPickByEngine": {
+    "Claude": [
+     "NordVPN",
+     4
+    ],
+    "Gemini": [
+     "ExpressVPN",
+     1
+    ],
+    "Google AI Overviews": [
+     "NordVPN",
+     3
+    ]
+   },
+   "topDomains": [
+    [
+     "cnet.com",
+     8
+    ],
+    [
+     "security.org",
+     7
+    ],
+    [
+     "pcworld.com",
+     6
+    ],
+    [
+     "techradar.com",
+     6
+    ],
+    [
+     "youtube.com",
+     5
+    ],
+    [
+     "top10vpn.com",
+     4
+    ],
+    [
+     "pcmag.com",
+     4
+    ],
+    [
+     "reddit.com",
+     3
+    ],
+    [
+     "rtings.com",
+     3
+    ],
+    [
+     "tomsguide.com",
+     3
+    ],
+    [
+     "nordvpn.com",
+     3
+    ],
+    [
+     "cybernews.com",
+     3
+    ]
+   ]
+  }
+ ],
+ "overall": {
+  "answers": 115,
+  "answersByEngine": {
+   "Google AI Overviews": 42,
+   "Claude": 48,
+   "Gemini": 25
+  },
+  "topDomains": [
+   [
+    "youtube.com",
+    37
+   ],
+   [
+    "zapier.com",
+    30
+   ],
+   [
+    "reddit.com",
+    22
+   ],
+   [
+    "pcmag.com",
+    21
+   ],
+   [
+    "allaboutcookies.org",
+    17
+   ],
+   [
+    "security.org",
+    17
+   ],
+   [
+    "techradar.com",
+    14
+   ],
+   [
+    "cnet.com",
+    13
+   ],
+   [
+    "pcworld.com",
+    10
+   ],
+   [
+    "website-builders.cybernews.com",
+    8
+   ],
+   [
+    "tooltester.com",
+    8
+   ],
+   [
+    "monday.com",
+    7
+   ],
+   [
+    "emailvendorselection.com",
+    7
+   ],
+   [
+    "quora.com",
+    7
+   ],
+   [
+    "bitwarden.com",
+    7
+   ],
+   [
+    "passwordmanager.com",
+    7
+   ],
+   [
+    "wix.com",
+    7
+   ],
+   [
+    "slack.com",
+    6
+   ],
+   [
+    "uschamber.com",
+    6
+   ],
+   [
+    "forbes.com",
+    6
+   ],
+   [
+    "emailtooltester.com",
+    6
+   ],
+   [
+    "technologyadvice.com",
+    6
+   ],
+   [
+    "1password.com",
+    6
+   ],
+   [
+    "cybernews.com",
+    6
+   ],
+   [
+    "sitebuilderreport.com",
+    6
+   ]
+  ],
+  "topDomainsByEngine": {
+   "Google AI Overviews": [
+    [
+     "youtube.com",
+     33
+    ],
+    [
+     "reddit.com",
+     19
+    ],
+    [
+     "zapier.com",
+     15
+    ],
+    [
+     "pcmag.com",
+     10
+    ],
+    [
+     "allaboutcookies.org",
+     8
+    ],
+    [
+     "quora.com",
+     7
+    ],
+    [
+     "wix.com",
+     7
+    ],
+    [
+     "cnet.com",
+     7
+    ],
+    [
+     "bitwarden.com",
+     6
+    ],
+    [
+     "techradar.com",
+     5
+    ]
+   ],
+   "Claude": [
+    [
+     "security.org",
+     7
+    ],
+    [
+     "techradar.com",
+     5
+    ],
+    [
+     "cybernews.com",
+     5
+    ],
+    [
+     "zapier.com",
+     4
+    ],
+    [
+     "emailtooltester.com",
+     4
+    ],
+    [
+     "ones.com",
+     4
+    ],
+    [
+     "guideflow.com",
+     4
+    ],
+    [
+     "cyberinsider.com",
+     4
+    ],
+    [
+     "pcworld.com",
+     4
+    ],
+    [
+     "websitebuilderexpert.com",
+     4
+    ]
+   ],
+   "Gemini": [
+    [
+     "pcmag.com",
+     11
+    ],
+    [
+     "zapier.com",
+     11
+    ],
+    [
+     "security.org",
+     7
+    ],
+    [
+     "allaboutcookies.org",
+     6
+    ],
+    [
+     "cnet.com",
+     6
+    ],
+    [
+     "monday.com",
+     4
+    ],
+    [
+     "slack.com",
+     4
+    ],
+    [
+     "uschamber.com",
+     4
+    ],
+    [
+     "youtube.com",
+     4
+    ],
+    [
+     "techradar.com",
+     4
+    ]
+   ]
+  },
+  "avgSourcesByEngine": {
+   "Google AI Overviews": 7.5,
+   "Claude": 4.0,
+   "Gemini": 9.8
+  },
+  "answersWithoutSourcesByEngine": {
+   "Google AI Overviews": 0,
+   "Claude": 0,
+   "Gemini": 4
+  }
+ }
+}

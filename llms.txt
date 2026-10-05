@@ -76,6 +76,10 @@
 - [youtube-transcript-api RequestBlocked or IpBlocked on a server? Get YouTube transcripts without proxies](https://retracn.github.io/automationnation-actors/guides/youtube-transcript-api-blocked/): YouTube blocks most cloud IPs, so youtube-transcript-api raises RequestBlocked or IpBlocked on servers. Get transcripts from a hosted API instead.
 - [app-store-scraper reviews not working (403 or "Unexpected token <")? Get App Store reviews in 2026](https://retracn.github.io/automationnation-actors/guides/app-store-scraper-reviews-not-working/): app-store-scraper reviews() gives 403 or "Unexpected token <" errors and stops at 500 reviews. Get App Store reviews by API, past the limit.
 
+## Studies
+
+- [Which brands do AI assistants recommend? 115 answers from Google AI Overviews, Gemini and Claude (October 2026)](https://retracn.github.io/automationnation-actors/studies/which-brands-ai-recommends-october-2026/): Google AI Overviews, Gemini and Claude answered 48 software buying questions: YouTube was cited in 79% of AI Overviews, and the engines often disagree.
+
 ## For AI agents
 
 - AutomationNation MCP server (open source, MIT): https://github.com/retracn/automationnation-mcp — 17 tools (search_flights, search_hotels, search_google_shopping, get_youtube_transcripts, search_google_news, search_google_images, search_google_videos, search_jobs, get_google_trends, get_trending_searches, find_local_businesses, find_uk_business_leads, get_advertiser_ads, get_app_reviews, analyze_app_reviews, check_ai_overview_citations, check_ai_visibility). Install: `npx -y github:retracn/automationnation-mcp` with APIFY_TOKEN set. MCP Registry name: io.github.retracn/automationnation-mcp. Smithery: https://smithery.ai/servers/automationnation/data-tools

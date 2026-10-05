@@ -48,4 +48,5 @@ https://retracn.github.io/automationnation-actors/guides/how-to-scrape-google-vi
 https://retracn.github.io/automationnation-actors/guides/pytrends-alternative/
 https://retracn.github.io/automationnation-actors/guides/youtube-transcript-api-blocked/
 https://retracn.github.io/automationnation-actors/guides/app-store-scraper-reviews-not-working/
+https://retracn.github.io/automationnation-actors/studies/which-brands-ai-recommends-october-2026/
 https://retracn.github.io/automationnation-actors/llms.txt
