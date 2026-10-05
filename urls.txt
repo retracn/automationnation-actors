@@ -23,6 +23,12 @@ https://retracn.github.io/automationnation-actors/compare/google-jobs-scrapers/
 https://retracn.github.io/automationnation-actors/compare/google-trends-scrapers/
 https://retracn.github.io/automationnation-actors/compare/app-store-review-scrapers/
 https://retracn.github.io/automationnation-actors/compare/google-play-review-scrapers/
+https://retracn.github.io/automationnation-actors/compare/youtube-transcript-scrapers/
+https://retracn.github.io/automationnation-actors/compare/google-flights-scrapers/
+https://retracn.github.io/automationnation-actors/compare/google-hotels-scrapers/
+https://retracn.github.io/automationnation-actors/compare/google-ads-transparency-scrapers/
+https://retracn.github.io/automationnation-actors/compare/google-shopping-scrapers/
+https://retracn.github.io/automationnation-actors/compare/google-news-scrapers/
 https://retracn.github.io/automationnation-actors/guides/how-to-scrape-google-jobs/
 https://retracn.github.io/automationnation-actors/guides/how-to-scrape-google-trends/
 https://retracn.github.io/automationnation-actors/guides/check-google-ai-overview-citations/
