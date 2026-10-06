@@ -54,6 +54,7 @@ https://retracn.github.io/automationnation-actors/guides/yt-dlp-sign-in-to-confi
 https://retracn.github.io/automationnation-actors/guides/amadeus-self-service-api-alternative/
 https://retracn.github.io/automationnation-actors/guides/google-custom-search-json-api-alternative/
 https://retracn.github.io/automationnation-actors/guides/langchain-google-search-custom-search-api-shutdown/
+https://retracn.github.io/automationnation-actors/guides/open-webui-google-search-without-pse/
 https://retracn.github.io/automationnation-actors/guides/google-custom-search-api-image-search-alternative/
 https://retracn.github.io/automationnation-actors/guides/google-flights-api/
 https://retracn.github.io/automationnation-actors/guides/google-hotels-api/
