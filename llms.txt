@@ -91,6 +91,7 @@
 - [youtube-transcript (npm) not working in production? Fix it on Vercel, AWS Lambda and Render](https://retracn.github.io/automationnation-actors/guides/youtube-transcript-npm-not-working-in-production/): youtube-transcript works locally but fails on Vercel, Lambda or Render? YouTube blocks cloud IPs. Swap in a drop-in with the same API that works anywhere.
 - [google-trends-api (npm) dailyTrends 404 or 429 errors? A drop-in that works in 2026](https://retracn.github.io/automationnation-actors/guides/google-trends-api-npm-dailytrends-404/): google-trends-api's dailyTrends and realTimeTrends return 404, and servers get 429s. Swap in a drop-in with the same methods and JSON that works again.
 - [JobSpy Google Jobs not working? "Google Jobs is currently unavailable" fixed with one import](https://retracn.github.io/automationnation-actors/guides/jobspy-google-jobs-not-working/): JobSpy's site_name='google' returns no jobs since 2025. Keep JobSpy for other sites and get Google Jobs back with a drop-in scrape_jobs.
+- [Open WebUI tools for YouTube transcripts (that work on servers), Google Flights, Hotels, News and Search](https://retracn.github.io/automationnation-actors/guides/open-webui-youtube-transcript-google-flights-tools/): Single-file Open WebUI tools: YouTube transcripts that don't get blocked on cloud servers, plus Google Flights, Hotels, News and Search. Paste, add a token, done.
 
 ## Studies
 

@@ -63,5 +63,6 @@ https://retracn.github.io/automationnation-actors/guides/google-news-api/
 https://retracn.github.io/automationnation-actors/guides/youtube-transcript-npm-not-working-in-production/
 https://retracn.github.io/automationnation-actors/guides/google-trends-api-npm-dailytrends-404/
 https://retracn.github.io/automationnation-actors/guides/jobspy-google-jobs-not-working/
+https://retracn.github.io/automationnation-actors/guides/open-webui-youtube-transcript-google-flights-tools/
 https://retracn.github.io/automationnation-actors/studies/which-brands-ai-recommends-october-2026/
 https://retracn.github.io/automationnation-actors/llms.txt
