@@ -48,5 +48,15 @@ https://retracn.github.io/automationnation-actors/guides/how-to-scrape-google-vi
 https://retracn.github.io/automationnation-actors/guides/pytrends-alternative/
 https://retracn.github.io/automationnation-actors/guides/youtube-transcript-api-blocked/
 https://retracn.github.io/automationnation-actors/guides/app-store-scraper-reviews-not-working/
+https://retracn.github.io/automationnation-actors/guides/google-trends-api/
+https://retracn.github.io/automationnation-actors/guides/yt-dlp-sign-in-to-confirm-not-a-bot/
+https://retracn.github.io/automationnation-actors/guides/amadeus-self-service-api-alternative/
+https://retracn.github.io/automationnation-actors/guides/google-custom-search-api-image-search-alternative/
+https://retracn.github.io/automationnation-actors/guides/google-flights-api/
+https://retracn.github.io/automationnation-actors/guides/google-hotels-api/
+https://retracn.github.io/automationnation-actors/guides/google-news-api/
+https://retracn.github.io/automationnation-actors/guides/youtube-transcript-npm-not-working-in-production/
+https://retracn.github.io/automationnation-actors/guides/google-trends-api-npm-dailytrends-404/
+https://retracn.github.io/automationnation-actors/guides/jobspy-google-jobs-not-working/
 https://retracn.github.io/automationnation-actors/studies/which-brands-ai-recommends-october-2026/
 https://retracn.github.io/automationnation-actors/llms.txt
