@@ -16,21 +16,40 @@ details{background:var(--card);border:1px solid var(--border);border-radius:8px;
 <h1>Google Custom Search JSON API shutting down in 2027? A drop-in replacement</h1><p class="lead">Google has closed its Custom Search JSON API to new customers, and existing customers have until 1 January 2027 to move. Google Custom Search API Alternative on Apify answers the same /customsearch/v1 requests with the same JSON (items with title, link, displayLink and snippet, plus searchType=image), built from live Google results, for $5 per 1,000 searches, the price Google charged, with no daily cap. Existing code changes two things: the endpoint (https://automationnation--google-custom-search-api.apify.actor/customsearch/v1) and the key (an Apify token instead).</p>
 <p><a class="btn" href="https://apify.com/automationnation/google-custom-search-api">Open Google Custom Search API Alternative on Apify</a> <span class="muted">$5 per 1,000 searches of up to 10 results ($4 on Gold and above)</span></p>
 <h2>Step by step</h2><ol><li><strong>Create a free Apify account.</strong> Sign up at apify.com. The free plan includes $5 of monthly credit, about 1,000 searches, and needs no credit card.</li><li><strong>Copy your API token.</strong> In Apify Console, open Settings → API &amp; Integrations and copy the personal API token.</li><li><strong>Change the endpoint.</strong> Replace https://www.googleapis.com/customsearch/v1 with https://automationnation--google-custom-search-api.apify.actor/customsearch/v1. The parameters stay the same: q, num, start, gl, hl, lr, cr, safe, dateRestrict, siteSearch, exactTerms, excludeTerms, orTerms, fileType and searchType=image.</li><li><strong>Swap the key for the token.</strong> Send token=YOUR_APIFY_TOKEN, or the header Authorization: Bearer YOUR_APIFY_TOKEN, instead of key=. cx can stay; it&#x27;s accepted and ignored.</li><li><strong>Keep your parsing code.</strong> The response has the API&#x27;s shape: items[].title, htmlTitle, link, displayLink, snippet, htmlSnippet, formattedUrl, queries.request and nextPage, and searchInformation. Image items add mime and image.contextLink, width, height, byteSize and thumbnailLink.</li><li><strong>Check the differences.</strong> It searches the whole web, so pass a Programmable Search Engine&#x27;s site list as siteSearch or site: operators. totalResults is a lower bound because Google no longer shows counts, there is no pagemap, and a request takes about 4–10 seconds instead of under one, so raise short client timeouts to 60 seconds.</li></ol>
-<h2>Do it from code</h2><h3>Python</h3><pre><code># pip install apify-client
-from apify_client import ApifyClient
+<h2>Do it from code</h2><h3>cURL</h3><pre><code>curl &quot;https://automationnation--google-custom-search-api.apify.actor/customsearch/v1?q=best+crm+for+startups&amp;num=10&amp;token=$APIFY_TOKEN&quot;</code></pre><h3>Python (requests)</h3><pre><code># pip install requests ; export APIFY_TOKEN=your_token
+import os
+import requests
 
-client = ApifyClient(&quot;YOUR_APIFY_TOKEN&quot;)
-run = client.actor(&quot;automationnation/google-custom-search-api&quot;).call(run_input={
-  &quot;queries&quot;: [
-    &quot;best project management software&quot;
-  ],
-  &quot;maxResultsPerQuery&quot;: 10
-})
-for item in client.dataset(run[&quot;defaultDatasetId&quot;]).iterate_items():
-    print(item.get(&quot;title&quot;), item.get(&quot;link&quot;), item.get(&quot;displayLink&quot;), item.get(&quot;snippet&quot;))</code></pre>
-<h3>REST API (cURL)</h3><pre><code>curl -X POST &quot;https://api.apify.com/v2/acts/automationnation~google-custom-search-api/run-sync-get-dataset-items?token=$APIFY_TOKEN&quot; \
-  -H &quot;Content-Type: application/json&quot; \
-  -d &#x27;{&quot;queries&quot;: [&quot;best project management software&quot;], &quot;maxResultsPerQuery&quot;: 10}&#x27;</code></pre>
+r = requests.get(
+    &quot;https://automationnation--google-custom-search-api.apify.actor/customsearch/v1&quot;,
+    params={&quot;q&quot;: &quot;best crm for startups&quot;, &quot;num&quot;: 10, &quot;gl&quot;: &quot;us&quot;},
+    headers={&quot;Authorization&quot;: f&quot;Bearer {os.environ[&#x27;APIFY_TOKEN&#x27;]}&quot;},
+    timeout=60,
+)
+for item in r.json().get(&quot;items&quot;, []):
+    print(item[&quot;title&quot;], item[&quot;link&quot;])</code></pre><h3>Python (Google&#x27;s client library)</h3><pre><code># pip install google-api-python-client httplib2 ; export APIFY_TOKEN=your_token
+import os
+import httplib2
+from googleapiclient.discovery import build
+
+
+class ApifyAuth(httplib2.Http):
+    &quot;&quot;&quot;Sends your Apify token with every request.&quot;&quot;&quot;
+    def request(self, uri, method=&quot;GET&quot;, body=None, headers=None, *args, **kwargs):
+        headers = {**(headers or {}), &quot;Authorization&quot;: f&quot;Bearer {os.environ[&#x27;APIFY_TOKEN&#x27;]}&quot;}
+        return super().request(uri, method, body, headers, *args, **kwargs)
+
+
+service = build(
+    &quot;customsearch&quot;, &quot;v1&quot;,
+    developerKey=&quot;unused&quot;,  # the Apify token in the header replaces the key
+    http=ApifyAuth(timeout=60),
+    client_options={&quot;api_endpoint&quot;: &quot;https://automationnation--google-custom-search-api.apify.actor&quot;},
+    static_discovery=True,  # bundled API description; nothing goes to Google
+)
+res = service.cse().list(q=&quot;best crm for startups&quot;, cx=&quot;unused&quot;, num=10).execute()
+for item in res.get(&quot;items&quot;, []):
+    print(item[&quot;title&quot;], item[&quot;link&quot;])</code></pre>
 <h2>From an AI assistant (MCP)</h2><p>Add this MCP server URL to Claude, ChatGPT or Cursor and ask in plain English:</p><pre><code>https://mcp.apify.com?tools=automationnation/google-custom-search-api</code></pre>
 <h2>Alternatives</h2><p>Other options: Vertex AI Search, which Google suggests for searching up to 50 domains (a different API); SERP APIs such as SerpApi, with their own JSON formats and usually monthly plans; or Google search Actors on Apify that return their own formats. Microsoft retired the Bing Search APIs in August 2025.</p>
 <h2>FAQ</h2><details open><summary>When does the Custom Search JSON API stop working?</summary><p>Google closed it to new customers and says existing customers have until 1 January 2027 to move to an alternative.</p></details><details open><summary>Is the JSON really the same?</summary><p>Yes for what most code reads: kind, items[] with title, link, displayLink, snippet, htmlSnippet and formattedUrl, queries.nextPage and searchInformation. pagemap isn&#x27;t included, and totalResults is a lower bound.</p></details><details open><summary>What does it cost?</summary><p>$5 per 1,000 searches of up to 10 results ($4.50 on Silver, $4 on Gold and above). Searches that return nothing are free, and there is no daily cap.</p></details><details open><summary>Does it work with my Programmable Search Engine (cx)?</summary><p>cx is accepted so existing code doesn&#x27;t break, but it isn&#x27;t read: the search covers the whole web. Restrict it with siteSearch or site: operators in q.</p></details><details open><summary>How fast is it?</summary><p>Usually 4–10 seconds per request, because each request fetches live Google results. Send requests in parallel for throughput.</p></details>
