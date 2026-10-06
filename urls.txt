@@ -52,6 +52,7 @@ https://retracn.github.io/automationnation-actors/guides/app-store-scraper-revie
 https://retracn.github.io/automationnation-actors/guides/google-trends-api/
 https://retracn.github.io/automationnation-actors/guides/yt-dlp-sign-in-to-confirm-not-a-bot/
 https://retracn.github.io/automationnation-actors/guides/amadeus-self-service-api-alternative/
+https://retracn.github.io/automationnation-actors/guides/googlesearch-python-empty-results/
 https://retracn.github.io/automationnation-actors/guides/google-custom-search-json-api-alternative/
 https://retracn.github.io/automationnation-actors/guides/langchain-google-search-custom-search-api-shutdown/
 https://retracn.github.io/automationnation-actors/guides/open-webui-google-search-without-pse/
