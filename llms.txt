@@ -106,6 +106,7 @@
 - [google-trends-api-cloud (npm)](https://github.com/retracn/google-trends-api-cloud): drop-in replacement for google-trends-api. No 429s from servers, and dailyTrends and realTimeTrends work again; same methods and JSON.
 - [googlesearch-cloud (Python)](https://github.com/retracn/googlesearch-cloud): drop-in replacement for googlesearch-python. from googlesearch import search returns results again (Google stopped serving the page it parsed); same search() and SearchResult.
 - [jobspy-google (Python)](https://github.com/retracn/jobspy-google): drop-in replacement for JobSpy (Google Jobs). site_name="google" returns jobs again; same scrape_jobs arguments and DataFrame columns.
+- [fast-flights-cloud (Python)](https://github.com/retracn/fast-flights-cloud): drop-in replacement for fast-flights. A fast-flights integration for when Google blocks you: same get_flights() and Flights objects, fetched by a hosted Google Flights API.
 - [amadeus-cloud (npm)](https://github.com/retracn/amadeus-cloud): drop-in replacement for the Amadeus SDK (flight search). Amadeus Self-Service keys stopped working in July 2026; flightOffersSearch.get/post return Amadeus-shaped offers again.
 - [app-store-scraper-cloud (npm)](https://github.com/retracn/app-store-scraper-cloud): drop-in replacement for app-store-scraper. A reliable reviews(): no 403 or "Unexpected token <" errors, more than 500 reviews; same API.
 
