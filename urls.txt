@@ -8,6 +8,7 @@ https://retracn.github.io/automationnation-actors/google-hotels-scraper/
 https://retracn.github.io/automationnation-actors/google-ads-transparency-scraper/
 https://retracn.github.io/automationnation-actors/google-news-scraper/
 https://retracn.github.io/automationnation-actors/google-images-scraper/
+https://retracn.github.io/automationnation-actors/google-custom-search-api/
 https://retracn.github.io/automationnation-actors/google-videos-scraper/
 https://retracn.github.io/automationnation-actors/google-trends-scraper/
 https://retracn.github.io/automationnation-actors/app-store-reviews-scraper/
@@ -51,6 +52,7 @@ https://retracn.github.io/automationnation-actors/guides/app-store-scraper-revie
 https://retracn.github.io/automationnation-actors/guides/google-trends-api/
 https://retracn.github.io/automationnation-actors/guides/yt-dlp-sign-in-to-confirm-not-a-bot/
 https://retracn.github.io/automationnation-actors/guides/amadeus-self-service-api-alternative/
+https://retracn.github.io/automationnation-actors/guides/google-custom-search-json-api-alternative/
 https://retracn.github.io/automationnation-actors/guides/google-custom-search-api-image-search-alternative/
 https://retracn.github.io/automationnation-actors/guides/google-flights-api/
 https://retracn.github.io/automationnation-actors/guides/google-hotels-api/

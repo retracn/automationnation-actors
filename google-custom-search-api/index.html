@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Google Custom Search JSON API alternative: same requests, same JSON | AutomationNation</title><meta name="description" content="Google Custom Search API Alternative is an Apify Actor that replaces Google&#x27;s Custom Search JSON API, which Google has closed to new customers and retires…"><link rel="canonical" href="https://retracn.github.io/automationnation-actors/google-custom-search-api/">
+<meta property="og:title" content="Google Custom Search JSON API alternative: same requests, same JSON | AutomationNation"><meta property="og:description" content="Google Custom Search API Alternative is an Apify Actor that replaces Google&#x27;s Custom Search JSON API, which Google has closed to new customers and retires…"><meta property="og:type" content="website"><meta property="og:url" content="https://retracn.github.io/automationnation-actors/google-custom-search-api/">
+<style>
+:root{--bg:#fff;--fg:#1f2328;--muted:#59636e;--card:#f6f8fa;--border:#d1d9e0;--accent:#0b57d0;--accent-fg:#fff}
+@media (prefers-color-scheme: dark){:root{--bg:#0d1117;--fg:#e6edf3;--muted:#9198a1;--card:#161b22;--border:#30363d;--accent:#4493f8;--accent-fg:#0d1117}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:860px;margin:0 auto;padding:32px 16px 64px}a{color:var(--accent)}h1{font-size:2rem;line-height:1.25;margin:.2em 0 .4em}h2{margin-top:2em;border-bottom:1px solid var(--border);padding-bottom:.3em}
+.lead{font-size:1.1rem}.btn{display:inline-block;background:var(--accent);color:var(--accent-fg);padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600;margin:8px 8px 8px 0}
+.muted{color:var(--muted)}pre{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px;overflow-x:auto;font-size:.88rem}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px}.card h3{margin:.1em 0 .4em;font-size:1.05rem}
+details{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin:8px 0}summary{font-weight:600;cursor:pointer}nav{font-size:.9rem;margin-bottom:12px}footer{margin-top:48px;font-size:.85rem;color:var(--muted)}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Google Custom Search API Alternative", "description": "Google Custom Search API Alternative is an Apify Actor that replaces Google's Custom Search JSON API, which Google has closed to new customers and retires on 1 January 2027. It answers the same /customsearch/v1 requests with the same JSON (items with title, link, displayLink and snippet, plus image search), built from live Google results, at $5 per 1,000 searches with no daily cap.", "applicationCategory": "BusinessApplication", "operatingSystem": "Web (Apify platform)", "url": "https://apify.com/automationnation/google-custom-search-api", "offers": {"@type": "Offer", "price": "0.005", "priceCurrency": "USD", "description": "$5 per 1,000 searches of up to 10 results ($4 on Gold and above)"}, "publisher": {"@type": "Organization", "name": "AutomationNation", "url": "https://apify.com/automationnation"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "When does the Custom Search JSON API stop working?", "acceptedAnswer": {"@type": "Answer", "text": "Google closed it to new customers and says existing customers have until 1 January 2027 to move to an alternative."}}, {"@type": "Question", "name": "Do I have to rewrite my code?", "acceptedAnswer": {"@type": "Answer", "text": "No. Change the endpoint to https://automationnation--google-custom-search-api.apify.actor/customsearch/v1 and send an Apify API token instead of the Google key; the parameters and the JSON response stay the same."}}, {"@type": "Question", "name": "Can I keep my Programmable Search Engine's site list?", "acceptedAnswer": {"@type": "Answer", "text": "Not through cx, which is ignored. Pass one site as siteSearch, or several in the query as site:a.com OR site:b.com."}}, {"@type": "Question", "name": "What does it cost?", "acceptedAnswer": {"@type": "Answer", "text": "$5 per 1,000 searches of up to 10 results ($4.50 on Silver, $4 on Gold and above), with no daily cap. Google charged $5 per 1,000 after 100 free queries a day; Apify's free plan includes $5 of monthly credit, about 1,000 searches."}}]}</script></head>
+<body><main><nav><a href="https://retracn.github.io/automationnation-actors/">AutomationNation Actors</a> › Google Custom Search API Alternative</nav>
+<h1>Google Custom Search JSON API alternative: same requests, same JSON</h1>
+<p class="lead">Google Custom Search API Alternative is an Apify Actor that replaces Google&#x27;s Custom Search JSON API, which Google has closed to new customers and retires on 1 January 2027. It answers the same /customsearch/v1 requests with the same JSON (items with title, link, displayLink and snippet, plus image search), built from live Google results, at $5 per 1,000 searches with no daily cap.</p>
+<p><a class="btn" href="https://apify.com/automationnation/google-custom-search-api">Run it on Apify</a> <span class="muted">$5 per 1,000 searches of up to 10 results ($4 on Gold and above)</span></p>
+<h2>Quick facts</h2><ul><li>Drop-in endpoint: replace https://www.googleapis.com/customsearch/v1 with https://automationnation--google-custom-search-api.apify.actor/customsearch/v1 and send your Apify token (token=… or Authorization: Bearer) instead of key=.</li><li>Same parameters: q, num, start, gl, hl, lr, cr, safe, dateRestrict, siteSearch, exactTerms, excludeTerms, orTerms, fileType and searchType=image with its image filters; cx is accepted and ignored.</li><li>Same JSON: kind, queries.request and nextPage, searchInformation and items[] with title, htmlTitle, link, displayLink, snippet, htmlSnippet and formattedUrl (image items add mime and image.contextLink, width, height, byteSize, thumbnailLink).</li><li>Differences: it searches the whole web (pass site lists as siteSearch or site: operators), totalResults is a lower bound, there is no pagemap, and a request takes about 5–15 seconds.</li><li>Price: $5 per 1,000 searches of up to 10 results, the price Google charged; searches with no results are free and there is no daily cap.</li></ul>
+<h2>Example input</h2><pre><code>{
+  &quot;queries&quot;: [
+    &quot;best project management software&quot;
+  ],
+  &quot;maxResultsPerQuery&quot;: 10
+}</code></pre>
+<h2>Run it from code</h2><h3>REST API (cURL)</h3><pre><code>curl -X POST &quot;https://api.apify.com/v2/acts/automationnation~google-custom-search-api/run-sync-get-dataset-items?token=$APIFY_TOKEN&quot; \
+  -H &quot;Content-Type: application/json&quot; \
+  -d &#x27;{&quot;queries&quot;: [&quot;best project management software&quot;], &quot;maxResultsPerQuery&quot;: 10}&#x27;</code></pre>
+<h3>Python</h3><pre><code># pip install apify-client
+from apify_client import ApifyClient
+
+client = ApifyClient(&quot;YOUR_APIFY_TOKEN&quot;)
+run = client.actor(&quot;automationnation/google-custom-search-api&quot;).call(run_input={
+  &quot;queries&quot;: [
+    &quot;best project management software&quot;
+  ],
+  &quot;maxResultsPerQuery&quot;: 10
+})
+for item in client.dataset(run[&quot;defaultDatasetId&quot;]).iterate_items():
+    print(item.get(&quot;title&quot;), item.get(&quot;link&quot;), item.get(&quot;displayLink&quot;), item.get(&quot;snippet&quot;))</code></pre><h3>JavaScript / Node.js</h3><pre><code>// npm install apify-client
+import { ApifyClient } from &#x27;apify-client&#x27;;
+
+const client = new ApifyClient({ token: &#x27;YOUR_APIFY_TOKEN&#x27; });
+const run = await client.actor(&#x27;automationnation/google-custom-search-api&#x27;).call({
+  &quot;queries&quot;: [
+    &quot;best project management software&quot;
+  ],
+  &quot;maxResultsPerQuery&quot;: 10
+});
+const { items } = await client.dataset(run.defaultDatasetId).listItems();
+for (const item of items) console.log(item.title, item.link, item.displayLink, item.snippet);</code></pre>
+<h2>Use it with AI agents (MCP)</h2>
+<p>Connect AI assistants such as Claude, ChatGPT or Cursor through Apify's MCP server. Hosted URL:</p><pre><code>https://mcp.apify.com?tools=automationnation/google-custom-search-api</code></pre>
+<p>Or run it locally in Claude Desktop / Cursor:</p><pre><code>{
+  &quot;mcpServers&quot;: {
+    &quot;google-custom-search-api&quot;: {
+      &quot;command&quot;: &quot;npx&quot;,
+      &quot;args&quot;: [
+        &quot;-y&quot;,
+        &quot;@apify/actors-mcp-server&quot;,
+        &quot;--tools&quot;,
+        &quot;automationnation/google-custom-search-api&quot;
+      ],
+      &quot;env&quot;: {
+        &quot;APIFY_TOKEN&quot;: &quot;YOUR_APIFY_TOKEN&quot;
+      }
+    }
+  }
+}</code></pre>
+<h2>FAQ</h2><details open><summary>When does the Custom Search JSON API stop working?</summary><p>Google closed it to new customers and says existing customers have until 1 January 2027 to move to an alternative.</p></details><details open><summary>Do I have to rewrite my code?</summary><p>No. Change the endpoint to https://automationnation--google-custom-search-api.apify.actor/customsearch/v1 and send an Apify API token instead of the Google key; the parameters and the JSON response stay the same.</p></details><details open><summary>Can I keep my Programmable Search Engine&#x27;s site list?</summary><p>Not through cx, which is ignored. Pass one site as siteSearch, or several in the query as site:a.com OR site:b.com.</p></details><details open><summary>What does it cost?</summary><p>$5 per 1,000 searches of up to 10 results ($4.50 on Silver, $4 on Gold and above), with no daily cap. Google charged $5 per 1,000 after 100 free queries a day; Apify&#x27;s free plan includes $5 of monthly credit, about 1,000 searches.</p></details>
+<p>Step-by-step guide: <a href="https://retracn.github.io/automationnation-actors/guides/google-custom-search-json-api-alternative/">Google Custom Search JSON API shutting down in 2027? A drop-in replacement</a></p>
+<p><a class="btn" href="https://apify.com/automationnation/google-custom-search-api">Open Google Custom Search API Alternative on Apify Store</a></p><footer>Built by AutomationNation · Actors run on the <a href="https://apify.com">Apify</a> platform · <a href="https://retracn.github.io/automationnation-actors/">All Actors</a> · <a href="https://retracn.github.io/automationnation-actors/llms.txt">llms.txt</a></footer></main></body></html>
