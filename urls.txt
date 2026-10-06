@@ -67,5 +67,6 @@ https://retracn.github.io/automationnation-actors/guides/jobspy-google-jobs-not-
 https://retracn.github.io/automationnation-actors/guides/open-webui-youtube-transcript-google-flights-tools/
 https://retracn.github.io/automationnation-actors/guides/places-api-legacy-not-enabled/
 https://retracn.github.io/automationnation-actors/guides/skyscanner-api-alternative/
+https://retracn.github.io/automationnation-actors/guides/find-businesses-without-website/
 https://retracn.github.io/automationnation-actors/studies/which-brands-ai-recommends-october-2026/
 https://retracn.github.io/automationnation-actors/llms.txt
