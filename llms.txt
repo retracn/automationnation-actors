@@ -98,6 +98,8 @@
 - [How to find local businesses without a website (from Google Maps), with phone numbers and a pitch](https://retracn.github.io/automationnation-actors/guides/find-businesses-without-website/): List local businesses that have no website on Google Maps, for any city and category, with phone, address, socials, rating and a ready outreach message.
 - [Google Alerts API: get Google News alerts as JSON, in Slack or by webhook](https://retracn.github.io/automationnation-actors/guides/google-alerts-api/): Google Alerts has no API. Get new Google News articles about any brand or topic as JSON on a schedule, only the new ones, and send them to Slack, Sheets or a webhook.
 - [Track Google Shopping prices automatically: price drops and new listings as JSON](https://retracn.github.io/automationnation-actors/guides/google-shopping-price-tracker/): Track product prices on Google Shopping across stores: a scheduled run returns only new listings and price changes, with the previous price, as JSON, Sheets or Slack.
+- [Get alerts when a competitor launches new Google ads (Ads Transparency Center)](https://retracn.github.io/automationnation-actors/guides/competitor-ad-alerts/): Watch competitors' Google ads automatically: a scheduled run returns only new ads from Google's Ads Transparency Center, with text, dates and previews, for Slack or Sheets.
+- [Automatically transcribe every new video from a YouTube channel (for RAG or notes)](https://retracn.github.io/automationnation-actors/guides/auto-transcribe-youtube-channel/): Transcribe each new video a YouTube channel or playlist posts, once: a scheduled run returns only new transcripts, with timestamps, for a knowledge base, RAG or a newsletter.
 
 ## Studies
 
