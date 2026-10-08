@@ -96,6 +96,8 @@
 - [Places API error: "You're calling a legacy API, which is not enabled for your project" — fixes in 2026](https://retracn.github.io/automationnation-actors/guides/places-api-legacy-not-enabled/): New Google Cloud projects can't enable the legacy Places API since March 2025. Migrate to Places API (New), or get business lists from Google Maps without a key.
 - [Skyscanner API alternative: flight prices by API without a partner application (2026)](https://retracn.github.io/automationnation-actors/guides/skyscanner-api-alternative/): Skyscanner's API needs an approved partner application. Get live flight prices (airlines, times, stops) from Google Flights by API instead, $0.20 per 1,000 flights.
 - [How to find local businesses without a website (from Google Maps), with phone numbers and a pitch](https://retracn.github.io/automationnation-actors/guides/find-businesses-without-website/): List local businesses that have no website on Google Maps, for any city and category, with phone, address, socials, rating and a ready outreach message.
+- [Google Alerts API: get Google News alerts as JSON, in Slack or by webhook](https://retracn.github.io/automationnation-actors/guides/google-alerts-api/): Google Alerts has no API. Get new Google News articles about any brand or topic as JSON on a schedule, only the new ones, and send them to Slack, Sheets or a webhook.
+- [Track Google Shopping prices automatically: price drops and new listings as JSON](https://retracn.github.io/automationnation-actors/guides/google-shopping-price-tracker/): Track product prices on Google Shopping across stores: a scheduled run returns only new listings and price changes, with the previous price, as JSON, Sheets or Slack.
 
 ## Studies
 
