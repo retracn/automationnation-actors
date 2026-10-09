@@ -72,5 +72,8 @@ https://retracn.github.io/automationnation-actors/guides/google-alerts-api/
 https://retracn.github.io/automationnation-actors/guides/google-shopping-price-tracker/
 https://retracn.github.io/automationnation-actors/guides/competitor-ad-alerts/
 https://retracn.github.io/automationnation-actors/guides/auto-transcribe-youtube-channel/
+https://retracn.github.io/automationnation-actors/guides/flight-price-alerts-api/
+https://retracn.github.io/automationnation-actors/guides/hotel-price-tracker/
+https://retracn.github.io/automationnation-actors/guides/google-jobs-alerts/
 https://retracn.github.io/automationnation-actors/studies/which-brands-ai-recommends-october-2026/
 https://retracn.github.io/automationnation-actors/llms.txt
